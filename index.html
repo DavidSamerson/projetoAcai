@@ -16,7 +16,14 @@
 		<link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
-
+        <style type="text/css">
+        	.carousel-indicators .active {
+				  background-color: purple;
+				}
+			.corborda li {
+				border: 1px solid purple;
+			}
+        </style>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -77,7 +84,8 @@
              
                     <!-- Carrousel -->
 
-                    <div class="row">
+                    <div class="container-fluid">
+                    	<div class="row">
 						
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					  
@@ -113,6 +121,7 @@
 					        </a>
 					  
 					    </div>
+					    </div>
 
 					   </div>
                      <!-- FIM Carrousel -->
@@ -122,7 +131,7 @@
         <!-- PRODUTOS --------------------------------------------------------------------------------------------------------------------- -->
         <!-- David Samerson -->
         <div class="services-container section-container">
-	        <div class="container">
+	        <div class="container-fluid">
 	            <div class="row">
 	                <div class="col-sm-12 services section-description wow fadeIn">
 	                    <h2>Produtos</h2>
@@ -136,15 +145,46 @@
         </div>
 
         <!-- Great support -->
-        <div class="great-support-container section-container section-container-gray-bg">
+        <div class="great-support-container section-container ">
         <!-- INICIO DO CAROUSEL DE 4---------------------------------------------------->
         <!--David Samerson-->
 	        <div class="row">
 			    <div class="row">
 					<div class="col-md-12">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+
+								<div  class="col-md-2 col-md-offset-1"><img src="Imagens/caixa-10l.png"></div>
+								<div  class="col-md-2 col-md-offset-2"><img src="Imagens/caixa-5l.png"></div>
+								<div  class="col-md-2 col-md-offset-2"><img src="Imagens/pote-2l.png"></div>
+
+							</div>
+
+							<div class="col-md-12">
+
+								<div  class="col-md-2 col-md-offset-1"> <h3>Caixa Com 10 Litros</h3></div>
+								<div  class="col-md-2 col-md-offset-2"> <h3>Caixa Com 5 Litros</h3></div>
+								<div  class="col-md-2 col-md-offset-2"> <h3>Pote Com 2 Litros</h3></div>
+
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+
 			                <div id="Carousel" class="carousel slide">
+
+
+			                <ol class="left carousel-indicators corborda">
+					        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					        </ol>
+					        
  
-			                <!-- Carousel items -->
+			                <!-- Carousel items SABORES -->
 			                <div class="carousel-inner">
 			                    
 			                <div class="item active">
@@ -176,13 +216,13 @@
 			                 
 			                </div><!--.carousel-inner-->
 			                <div class="col-md-12">
-			                	<div class="col-md-6">
-			                  <a data-slide="prev" href="#Carousel" class="">
-			                  <img src="Imagens/Setas/back.png" style="padding-left: 30px;" width="20%" height="20%"></a>
+			                	<div class="col-md-3 col-md-offset-3">
+			                  <a data-slide="prev" href="#Carousel">
+			                  <img src="Imagens/Setas/back.png" style="padding-right: 0" width="20%" height="20%"></a>
 			                  	</div>
-			                  	<div class="col-md-6">
-			                  <a data-slide="next" href="#Carousel" class="">
-			                  <img src="Imagens/Setas/next.png" style="padding-right: 30px;" width="20%" height="20%"></a>
+			                  	<div class="col-md-3 col-sm-3">
+			                  <a data-slide="next" href="#Carousel">
+			                  <img src="Imagens/Setas/next.png" style="padding-left: 0" width="20%" height="20%"></a>
 			                  	</div>
 			                 </div>
 			                </div><!--.Carousel-->
