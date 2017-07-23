@@ -24,13 +24,83 @@
         h3 {color: #662d91}
 
         	.carousel-indicators .active {
-				  background-color: purple;
+				  background-color: #662d91;
 				}
 			.corborda li {
-				border: 1px solid purple;
+				border: 1px solid #662d91;
 			}
+
         </style>
 
+        <style>
+            * {margin:0; padding: 0;}
+            html, body {height:100%;}
+
+            /** formata elementos que tem backgrounds parallax **/
+            .bgParallax {
+                font-family: 'Elsie', cursive;
+                color:#FFF;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1920px;
+                position: relative;
+                min-height: 50%;
+                text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+                background-position: 50% 0;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            /* Define backgrounds dos divs */
+            #quemsomos {
+                background-image: url(assets/img/backgrounds/fundo-branco.png);
+                min-height: 10%;
+            }
+            #missao {
+                background-image: url(assets/img/backgrounds/açai.png);
+                -webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+                -moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+                -ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+                -o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+                box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+            }
+
+            #teste {
+                background-image: url(assets/img/backgrounds/fundo-branco.png);
+                min-height: 10%;
+            }
+
+            /** Formata o article que vai o texto **/
+            .bgParallax article {
+                width: 70%;
+                text-align: center;
+                margin:0 auto;
+                padding:20% 0 0;
+            }
+
+            /** formata texto **/
+            article h1 {font-size:40px;}
+            article p {line-height: 30px; font-size:20px; margin-top:15px;}
+            article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+        </style>
+
+
+        <script type="text/javascript">
+            $('div.bgParallax').each(function(){
+                var $obj = $(this);
+
+                $(window).scroll(function() {
+                    var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+                    var bgpos = '50% '+ yPos + 'px';
+
+                    $obj.css('background-position', bgpos );
+
+                });
+            });
+        </script>
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -146,7 +216,7 @@
 		
       
         <!-- PRODUTOS --------------------------------------------------------------------------------------------------------------------- -->
-        <!-- David Samerson -->
+        <
         <div class="services-container section-container">
 	        <div class="container-fluid">
 	            <div class="row">
@@ -164,7 +234,7 @@
         <!-- Great support -->
         <div class="great-support-container section-container ">
         <!-- INICIO DO CAROUSEL DE 4---------------------------------------------------->
-        <!--David Samerson-->
+
 	        <div class="row">
 			    <div class="row">
 					<div class="col-md-12">
@@ -181,9 +251,9 @@
 
 							<div class="col-md-12">
 
-								<div  class="col-md-2 col-md-offset-1"> <h3>Caixa Com 10 Litros</h3></div>
-								<div  class="col-md-2 col-md-offset-2"> <h3>Caixa Com 5 Litros</h3></div>
-								<div  class="col-md-2 col-md-offset-2"> <h3>Pote Com 2 Litros</h3></div>
+								<div  class="col-md-2 col-md-offset-1"> <h3>Caixa Com 10 Litros</h3><h4>O melhor açaí do Rio! Caixas especiais de 10 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4></div>
+								<div  class="col-md-2 col-md-offset-2"> <h3>Caixa Com 5 Litros</h3><h4>O melhor açaí do Rio! Açaí especial em caixa de 5 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4></div>
+								<div  class="col-md-2 col-md-offset-2"> <h3>Pote Com 2 Litros</h3><h4>Agora você pode levar pra casa todo o sabor da Lokos por Açaí em potes de 2 litros! É a Lokos por açaí tamanho família!</h4></div>
 
 							</div>
 						</div>
@@ -194,54 +264,16 @@
 			                <div id="Carousel" class="carousel slide">
 
 
-			                <ol class="left carousel-indicators corborda">
-					        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					        </ol>
+
 					        
  
 			                <!-- Carousel items SABORES -->
 			                <div class="carousel-inner">
 			                    
-			                <div class="item active">
-			                	<div class="row">
-			                	  <div class="col-md-2" style="margin-left: 12%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	  <div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	  <div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	  <div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	</div><!--.row-->
-			                </div><!--.item-->
-			                 
-			                <div class="item">
-			                	<div class="row">
-			                		<div class="col-md-2" style="margin-left: 12%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	</div><!--.row-->
-			                </div><!--.item-->
-			                 
-			                <div class="item">
-			                	<div class="row">
-			                		<div class="col-md-2" style="margin-left: 12%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                		<div class="col-md-2" style="margin-left: 03%"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-			                	</div><!--.row-->
-			                </div><!--.item-->
-			                 
+
+
 			                </div><!--.carousel-inner-->
-			                <div class="col-md-12">
-			                	<div class="col-md-3 col-md-offset-3">
-			                  <a data-slide="prev" href="#Carousel">
-			                  <img src="Imagens/Setas/back.png" style="padding-right: 0" width="20%" height="20%"></a>
-			                  	</div>
-			                  	<div class="col-md-3 col-sm-3">
-			                  <a data-slide="next" href="#Carousel">
-			                  <img src="Imagens/Setas/next.png" style="padding-left: 0" width="20%" height="20%"></a>
-			                  	</div>
-			                 </div>
+
 			                </div><!--.Carousel-->
 			                 
 					</div>
@@ -250,7 +282,7 @@
         </div>
 
 		<!-- SOBRE A EMPRESA -->
-        <div class="more-services-container section-container">
+        <div class="bgParallax" class="more-services-container section-container">
 	        <div class="container">
 	        	
 	            <div class="row">
@@ -413,12 +445,13 @@
         </div>
 
 		<!-- Call to action -->
-        <div class="call-to-action-container section-container section-container-image-bg">
+        <!-- será usado em caso de necessidade --
+        <div id="paralax"  class="call-to-action-container section-container section-container-image-bg">
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
 	                    <p style="color: white; background-image: url(Imagens/IconesGeral/filtro.png);" >
-	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+	                    	 wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
 	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
 	                    </p>
 	                </div>
@@ -430,218 +463,19 @@
 	            	</div>
 	            </div>
 	        </div>
+        </div> -->
+        <!-- teste paralax-->
+        <div id="quemsomos" class="bgParallax" data-speed="15">
+
         </div>
-        
-        <!-- Portfolio -->
-        <div class="portfolio-container section-container" >
-	        <div class="container-fluid" style="margin-bottom: 10%">
-	            <div class="row">
-	                <div class="col-sm-12 portfolio section-description wow fadeIn">
+        <div id="missao" class="bgParallax" data-speed="10">
 
-	                    <h2>Estudos e Notícias sobre o Açaí</h2>
-
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                    <p>Algumas notícias a respeito dos benefícios de se consumir Açaí</p>
-	                </div>
-	            </div>
-
-	            <div id="carousel-example-generic4" class="carousel slide wow fadeInUp" style="position: absolute; padding-bottom: 30%">
-					        
-			     <!-- Carousel items NOTICIAS ------------------------------------------------------------------------------ -->
-			    <div class="carousel-inner wow fadeInUp">
-
-	            <div class="col-md-10 col-md-offset-1 item active" > <!-- PEDAÇO 1 -->
-
-                	<div class="col-sm-4 portfolio-box">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">Estudo da Embrapa mostra composição química do açaí</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<div class="col-sm-12">
-                		<p>
-                			O açaí é considerado alimento de alto valor calórico, com elevado percentual de lipídeos, e nutricional, pois é rico em proteínas e minerais. Nas áreas de exploração extrativa, o açaí representa a principal base alimentar da população, notadamente dos ribeirinhos da região do estuário do Rio Amazonas.
-                		</p>
-                		</div>
-	            	<div class="col-sm-4 section-bottom-button" >
-                        <a class="btn btn-link-1" href="#" style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	            <div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">Como o Sebrae pode ajudar seu Projeto de Açaí e Sorvetes Gratuitamente</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<p>Atualmente o Portal de Educação Sebrae, oferece diversos cursos realizados pela internet, e melhor, tudo de forma gratuita. E com o objetivo de auxiliar clientes e leitores do site, em seus projetos de franquias de açaí, compilamos informações relevantes de cursos para empreendedor individual, ao qual entendemos que poderá servir como base, para quem deseja iniciar ou expandir no segmento de açaí e sorvetes com sucesso.</p>
-	            	<div class="col-sm-4 section-bottom-button ">
-                        <a class="btn btn-link-1" href="#"  style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	            <div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">Vantagens de se comprar o Creme de Açaí para comercialização</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<p>Um dos melhores períodos para se ganhar dinheiro com alimentos é o verão. E o açaí desponta como um dos produtos mais consumidos neste período. Por isso, listamos as vantagens de se comprar o creme de açaí já batido para aproveitar este período do verão.</p>
-	            	<div class="col-sm-4 section-bottom-button " >
-                        <a class="btn btn-link-1" href="#" style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	        </div>
-	        <div class="col-md-10 col-md-offset-1 item" > <!-- PEDAÇO 2 -->
-
-                	<div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">O que é Açaí Pirata e como se proteger</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<p>Como se pode perceber em nosso site, estamos chamando a atenção de nossos clientes e futuros clientes para um sério problema que infelizmente parece estar virando moda entre algumas fabricas de creme de açaí que já são antigas no mercado ou mesmo as que estão nascendo.</p>
-	            	<div class="col-sm-4 section-bottom-button " >
-                        <a class="btn btn-link-1" href="#" style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	            <div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">Carrinho de açaí é um pequeno mas lucrativo negócio</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<p>O carrinho de açaí é prático, exige pouco investimento e atrai clientes por onde passa. O empresário José Nobre da Costa fabrica carrinhos para pequenos negócios há 27 anos. Ele começou como ambulante, vendendo pipoca na rua...</p>
-	            	<div class="col-sm-4 section-bottom-button ">
-                        <a class="btn btn-link-1" href="#"  style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	            <div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">8 Motivos para você consumir Açaí ainda Hoje</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<p>Em nosso segmento de mercado açaí entre outras frutas exóticas, temos como missão expandir e incentivar o consumo a todos que pretendem ou já aderiram uma alimentação saudável e energética.</p>
-	            	<div class="col-sm-4 section-bottom-button " >
-                        <a class="btn btn-link-1" href="#" style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	        </div>
-	        <div class="col-md-10 col-md-offset-1 item" > <!-- PEDAÇO 3 -->
-
-                	<div class="col-sm-4 portfolio-box ">
-	                	<div class="portfolio-box-image">
-	                		<img src="assets/img/portfolio/1.jpg" alt="" data-at2x="assets/img/portfolio/1.jpg">
-	                	</div>
-                		<h3><a href="#">O Funcionamento de uma maquina de açaí expresso frozen</a> 
-                		<i class="fa fa-angle-right"></i></h3>
-                		<div>
-                			<p>Assim como o sorvete expresso frozen, o açai expresso segue como tendência de promissor negócio, possui alta procura, baixo custo, alta produtividade e garante bons lucros ao empreendedor.</p>
-                		</div>
-	            	<div class="col-sm-4 section-bottom-button " >
-                        <a class="btn btn-link-1" href="#" style="background: #662d91">Ler Mais...</a>
-	            	</div>
-	            </div>
-	        </div>
-
-
-			</div><!--.carousel-inner-->
-			      <a class="left carousel-control" href="#carousel-example-generic4" data-slide="prev" >
-					<span class="glyphicon glyphicon-chevron-left" ></span>
-					</a>
-					        
-				<a class="right carousel-control" href="#carousel-example-generic4" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-			    </a>
-			 </div><!--.Carousel  -----------------------------------------------------------------------------------------  -->			
         </div>
-        </div>
+        <div id="teste" class="bgParallax" data-speed="10">
 
-        <!-- Testimonials -->
-        <div class="testimonials-container section-container section-container-image-bg" style="margin-top: 50%;">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-sm-12 testimonials section-description wow fadeIn">
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp">
-	                	<div role="tabpanel">
-	                		<!-- Tab panes -->
-	                		<div class="tab-content">
-	                			<div role="tabpanel" class="tab-pane fade in active" id="tab1">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/1.jpg" alt="" data-at2x="assets/img/testimonials/1.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-		                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab2">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/2.jpg" alt="" data-at2x="assets/img/testimonials/2.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-		                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-		                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-		                                	<a href="#">Minim Veniam, nostrud.com</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab3">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/3.jpg" alt="" data-at2x="assets/img/testimonials/3.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-		                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-		                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                			<div role="tabpanel" class="tab-pane fade" id="tab4">
-	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/4.jpg" alt="" data-at2x="assets/img/testimonials/4.jpg">
-	                				</div>
-	                				<div class="testimonial-text">
-		                                <p>
-		                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-		                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-		                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-		                                	<a href="#">Minim Veniam, nostrud.com</a>
-		                                </p>
-	                                </div>
-	                			</div>
-	                		</div>
-	                		<!-- Nav tabs -->
-	                		<ul class="nav nav-tabs" role="tablist">
-	                			<li role="presentation" class="active">
-	                				<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
-	                			</li>
-	                			<li role="presentation">
-	                				<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
-	                			</li>
-	                			<li role="presentation">
-	                				<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
-	                			</li>
-	                			<li role="presentation">
-	                				<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
-	                			</li>
-	                		</ul>
-	                	</div>
-	                </div>
-	            </div>
-	        </div>
         </div>
-                
+        <!-- teste paralax-->
+      
         <!-- começo do EVENTOS -->
         <div class="blog-container section-container">
 	        <div class="container">
@@ -744,7 +578,7 @@
         </div>
 
 	</div>
-		<div style="border-color: red; padding-bottom: 500px">
+		<div style="">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29414.555043659748!2d-43.33939800000001!3d-22.846171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996345f40fa9b1%3A0x43acc8bf2a1cc5e4!2sEstr.+do+Barro+Vermelho%2C+1381+-+Col%C3%A9gio%2C+Rio+de+Janeiro+-+RJ%2C+21540-501!5e0!3m2!1spt-BR!2sbr!4v1500689639801" width="1300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
         <!-- Footer -->
