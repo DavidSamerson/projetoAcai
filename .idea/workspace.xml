@@ -15,16 +15,16 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="477" column="6" lean-forward="false" selection-start-line="477" selection-start-column="6" selection-end-line="477" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-                <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-                <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+                <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+                <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+                <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
               </folding>
             </state>
           </provider>
@@ -200,6 +200,52 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Imagens" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Imagens" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetoAcai" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -312,12 +358,12 @@
       <workItem from="1500339805633" duration="23000" />
       <workItem from="1500687232359" duration="36000" />
       <workItem from="1500687296691" duration="2659000" />
-      <workItem from="1500734116734" duration="8401000" />
+      <workItem from="1500734116734" duration="9081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17057000" />
+    <option name="totallyTimeSpent" value="17737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
@@ -362,9 +408,9 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
@@ -418,9 +464,9 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
@@ -474,9 +520,9 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
@@ -530,9 +576,9 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
@@ -586,9 +632,9 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
@@ -717,16 +763,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="477" column="6" lean-forward="false" selection-start-line="477" selection-start-column="6" selection-end-line="477" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1500770200014" expanded="false" signature="19315:19383" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19864:19883" ph="..." />
-            <marker date="1500770200014" expanded="false" signature="19951:19997" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19296:19364" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19845:19864" ph="..." />
+            <marker date="1500770882158" expanded="false" signature="19932:19978" ph="..." />
           </folding>
         </state>
       </provider>
