@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
     */
     $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
     $('.call-to-action-container').backstretch("assets/img/backgrounds/1.jpg");
-    $('.testimonials-container').backstretch("assets/img/backgrounds/1.jpg");
+  
     
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
