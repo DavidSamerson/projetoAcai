@@ -1,0 +1,82 @@
+a img {
+    border: none;
+}
+
+#destaques{
+    position: relative;
+    width:500px;
+    height:330px;
+    padding:0;
+    margin:10px 5px 5px 10px;
+    float:left;
+}
+#destaques ul, #destaques ul li{
+    list-style: none;
+}
+#destaques ul, #destaques ul li, #destaques ul li img {
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+    height: 313px;
+}
+#destaques ul li {
+    position: relative;
+}
+#destaques ul li div.fundo {
+    width: 500px; height: 40px;
+    position: absolute;
+    bottom: 0px; left: 0px;
+    background: #3f2161;
+    opacity:0.8; filter: alpha(opacity = 80);
+}
+#destaques ul li p {
+    margin: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 0px; left: 0px;
+    line-height: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight:bold;
+}
+#destaques ul li p a {
+    color: white;
+    text-decoration: none;
+}
+#destaques a.faixa {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: transparent url(../imagens/faixas.png) 0 0 no-repeat;
+}
+#destaques div.paginas {
+    position: absolute;
+    top: 5px; right: 5px;
+    z-index: 100;
+}
+#destaques div.paginas a {
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    color: white;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    outline: none;
+    background:#000000; opacity:0.9;
+    filter: alpha(opacity = 90);
+    font-weight:bold;
+}
+#destaques div.paginas a:hover, #destaques div.paginas a.activeSlide {
+    background: #3f2161; font-weight: bold;
+}
+#destaques ul li p, #destaques ul li div.fundo {
+    display: none;
+}
