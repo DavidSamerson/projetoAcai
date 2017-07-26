@@ -105,10 +105,6 @@
         	 	.escolhaMenu{
         		margin-left: 30%;
         		}
-        		.logo{
-        			
-        			background-image: 
-        		}
         	 }
         	 @media (min-width: 1025px) {
         	 	.navCor{
@@ -137,6 +133,11 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+   	    <script type="text/javascript" src="scripts/jcycle.js"></script>
+    	<script type="text/javascript" src="scripts/destaques.js"></script>
     </head>
 
     <body>
@@ -148,7 +149,6 @@
 
 		<!-- Top menu -->
 		<nav style=" background-size: 100%; background-repeat: no-repeat" class="navbar navImage navCor navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
-		<div class="col-xs-4 logo"></div>
 			<div class="container-fluid navCor">
 				<div class="navbar-header navCor">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
@@ -158,9 +158,10 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse escolhaMenu pull-right" id="top-navbar-1">
-					<ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav">
+				    <ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav">
 						<li><a class="scroll-link" href="#top-content">Home</a></li>
 						<li><a class="scroll-link" href="#services">Produtos</a></li>
 						<li><a class="scroll-link" href="#portfolio">Sobre</a></li>
@@ -514,7 +515,7 @@
 
 	            <!-- Começo do carousel de 4 para EVENTOS ---------------------------------------- -->
 
-	            <div id="carousel-example-generic3" class="carousel slide col-xs-10" data-ride="carousel" >
+	            <div id="carousel-example-generic3" class="carousel slide col-xs-10 col-md-10 col-md-offset-1" data-ride="carousel" >
 						  <!-- Indicators -->
 						  <ol class="carousel-indicators corborda">
 						    <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
@@ -656,11 +657,56 @@
 
 		<div style="padding-bottom: 5%;" class="container-fluid testimonials-container" >
 			<div class="row">
-				<div class="col-sm-12 testimonials section-description wow fadeIn">
+				<div class="col-sm-12 col-md-12 col-xs-12 testimonials section-description wow fadeIn">
 					<h2>Notícias sobre Açaí </h2>
-					<h3>David, aqui entra o banner que esta na pagina noticias.html que eu commitei</h3>
 					<div class="divider-1 wow fadeInUp"><span></span></div>
 				</div>
+				<div id="destaques" class="col-md-6 col-xs-6 col-md-offset-3 col-xs-offset-3">
+					 <a class="faixa" href="#" title=""></a>
+						    <ul>
+						        <li>
+						            <a href="#" title="Destaque 01"><img src="assets/img/sebrai.png" alt="Destaque 01" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 01">Sebrae pode ajudar seu Projeto de Açaí Gratuitamente</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 02"><img src="assets/img/creme.png" alt="Destaque 01" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 02">Vantagens para se comercializar o Creme de Açaí</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 03"><img src="assets/img/acai_falso.png" alt="Destaque 01" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 03">O que é Açaí Pirata e como se proteger</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 04"><img src="assets/img/carrinho.png" alt="Destaque 01" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 04">Carrinho de açaí é um pequeno mas lucrativo negócio</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 05"><img src="assets/img/acai_saude.png" alt="Destaque 01" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 05">8 Motivos para você consumir Açaí ainda Hoje</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 06"><img src="assets/img/maquina.png" alt="Destaque 02" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 06">O Funcionamento de uma maquina de açaí expresso frozen</a></p>
+						        </li>
+
+						        <li>
+						            <a href="#" title="Destaque 07"><img src="assets/img/embrapa.jpg" alt="Destaque 03" /></a>
+						            <div class="fundo"></div>
+						            <p><a href="#" title="Destaque 07">Estudo da Embrapa mostra composição química do açaí</a></p>
+						        </li>
+						    </ul>
+						</div>
 			</div>
 		</div>
 
