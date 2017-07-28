@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <style type="text/css">
+
+        p {color: black; text-align: justify;}
+        h1 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h2 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h3 {color: #3f2161;}
+        h4 {color: #3f2161; text-align: center;}
+
+        .carousel-indicators .active {
+            background-color: #3f2161;
+        }
+        .corborda li {
+            border: 1px solid #3f2161;
+        }
+
+    </style>
+
+    <style>
+        * {margin:0; padding: 0;}
+        html, body {height:100%;}
+
+        /** formata elementos que tem backgrounds parallax **/
+        .bgParallax {
+
+            color:#FFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            position: relative;
+            min-height: 50%;
+
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Define backgrounds dos divs */
+        #quemsomos {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+        #missao {
+            background-image: url(assets/img/backgrounds/açai.png);
+
+        }
+
+        #teste {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+
+        /** Formata o article que vai o texto **/
+        .bgParallax article {
+            width: 70%;
+            text-align: center;
+            margin:0 auto;
+            padding:20% 0 0;
+        }
+
+        /** formata texto **/
+        article h1 {font-size:40px;}
+        article p {line-height: 30px; font-size:20px; margin-top:15px;}
+        article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+    </style>
+
+
+    <script type="text/javascript">
+        $('div.bgParallax').each(function(){
+            var $obj = $(this);
+
+            $(window).scroll(function() {
+                var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+                var bgpos = '50% '+ yPos + 'px';
+
+                $obj.css('background-position', bgpos );
+
+            });
+        });
+    </script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" href="Imagens/Logo/fruta.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jcycle.js"></script>
+    <script type="text/javascript" src="scripts/destaques.js"></script>
+    <title>Lokos por Açaí</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+
+<div id="destaques">
+    <a class="faixa" href="#" title=""></a>
+    <ul>
+        <li>
+            <a href="#" title="Destaque 01"><img src="assets/img/sebrai.png" alt="Destaque 01" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 01">Sebrae pode ajudar seu Projeto de Açaí Gratuitamente</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 02"><img src="assets/img/creme.png" alt="Destaque 01" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 02">Vantagens para se comercializar o Creme de Açaí</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 03"><img src="assets/img/acai_falso.png" alt="Destaque 01" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 03">O que é Açaí Pirata e como se proteger</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 04"><img src="assets/img/carrinho.png" alt="Destaque 01" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 04">Carrinho de açaí é um pequeno mas lucrativo negócio</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 05"><img src="assets/img/acai_saude.png" alt="Destaque 01" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 05">8 Motivos para você consumir Açaí ainda Hoje</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 06"><img src="assets/img/maquina.png" alt="Destaque 02" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 06">O Funcionamento de uma maquina de açaí expresso frozen</a></p>
+        </li>
+
+        <li>
+            <a href="#" title="Destaque 07"><img src="assets/img/embrapa.jpg" alt="Destaque 03" /></a>
+            <div class="fundo"></div>
+            <p><a href="#" title="Destaque 07">Estudo da Embrapa mostra composição química do açaí</a></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
