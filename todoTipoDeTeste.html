@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <style type="text/css">
+
+
+
         .mostrar1{
             display: none;
             border: 1px solid #000;
@@ -108,230 +117,84 @@
 
 
     </script>
+
+    <script>
+        function Mudarestado(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'none';
+        }
+    </script>
 </head>
 <body>
+<div id="minhaDiv">Conteudo</div>
+<button type="button" onclick="Mudarestado('minhaDiv')">Mostrar / Esconder</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-
 <h3 id="toggle1"><a href="#" title="Destaque 01">Como o Sebrae pode ajudar seu Projeto de Açaí Gratuitamente</a></h3>
 
-<div class="mostrar1">
-<div class="art-layout-cell art-content">
+    <div class="mostrar1">
 
-    <div class="item-page"><div class="art-box art-post">
-        <div class="art-box-body art-post-body">
-            <div class="art-post-inner">
-                <div class="art-postcontent">
-                    <div class="art-article"><p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="color: black; font-family: Verdana, sans-serif; font-size: 9pt; line-height: 13.5pt;">Atualmente o</span><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/"><span style="color: #9551b3;">Portal de Educação Sebrae</span></a>, oferece diversos cursos realizados pela internet, e melhor, tudo de forma gratuita. E com o objetivo de auxiliar clientes e leitores do site, em seus projetos de <a href="http://www.franquiasdeacai.com.br" rel="bookmark" title="Permanent Link to Franquias de Açaí">franquias de açaí,</a> compilamos informações relevantes de<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<b>cursos para empreendedor individual</b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">, ao qual entendemos que poderá servir como base, para quem deseja iniciar ou expandir no segmento de açaí e sorvetes com sucesso.</span></span></span></span></p>
-
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><br /></span></span></span></span></span></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">De inicio o Portal de Educação Sebrae, recomenda a todos os interessados, a fazer primeiro o curso AE – Apreender a Empreender. Curso para interessados que queiram começar seu próprio negocio, com noções de como gerir seu empreendimento, ou para quem já possui seu negócio e deseja repensar seu modelo. O curso contém três módulos: mercado, finanças e empreendedorismo. Leia mais informações<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=SP&amp;id=55&amp;DemonstracaoAtiva=N"><span style="color: #9551b3;">aqui</span></a>.</span></span></span></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para todos os cursos, é permitida a inscrição de apenas uma matricula por vez. O interessado para realizar qualquer outro curso, deverá concluir o módulo ao qual tenha feito a matricula, para assim efetuar uma nova inscrição. Ao termino de cada curso, o aluno receberá o certificado de conclusão, onde poderá imprimir e autenticá-lo diretamente no próprio site. Os cursos têm duração de 30dias e alguns com duração de 60 dias, ambos com períodos de ambientação, facilitando a adaptação ao sistema virtual de ensino.</span></p>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae EI – Empreendedor Individual</span></b></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Curso vivamente indicado para quem deseja ou trabalha com carrinho de açaí, ou pequeno quiosque de açaí. Este curso também tem como objetivo, informar à importância da legalização de suas atividades, e dar a conhecer todos os benefícios de direito sobre a lei complementar numero 128, de 19 de dezembro de 2008. Veja neste curso as vantagens de se legalizar como empreendedor individual, como realizar o processo de legalização da atividade, onde poderá trabalhar e alem de outras informações de impostos a serem pagos e os benefícios de aposentadoria e auxilio doença ao qual terá direito. Mais informações<a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=38&amp;DemonstracaoAtiva=N"><span style="color: #9551b3;">aqui.</span></a></span></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Conhecendo o Programa de Cursos Sei (Sebrae Empreendedor Individual)</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O programa traz soluções para temas básicos, auxiliando na administração e fortalecimento na estrutura das micros e pequenas empresas. Oferece seis diferentes temáticas, com a metodologia visando o desenvolvimento básico, para melhorar e construir a gestão do negócio. O conceito é dividido em seis cursos, sendo eles: SEI Empreender, SEI Comprar, SEI Vender, SEI Planejar, SEI Controlar Meu Dinheiro e SEI Unir Forças para Melhorar.</span></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Por meio de uma biblioteca virtual, o empreendedor interessado poderá acessar o curso, imprimir ou arquiva-lo. Veja a seguir um breve resumo de todos os cursos citados acima e link para mais informações.</span></p>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Comprar</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O curso tem como objetivo capacitar o empreendedor, a administrar e planejar suas compras junto a fornecedores. Aprenda dicas e estratégias relevantes, a fim de adquiri boas compras e prazos favoráveis, que certamente farão diferença na qualidade do produto final, bem como a lucratividade esperada. As aulas são divididas em quatro módulos:<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Questões instigadoras; Realizando boas compras; Vamos às compras e As respostas que preciso. Mais informações no link abaixo:</span></span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=81&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Comprar</span></a></span></li>
-                        </ul>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Controlar Meu Dinheiro</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Este curso fornece conhecimento ao empreendedor, sobre boas praticas de uso do dinheiro, a fim de realizar melhor o fluxo de caixa, contas a pagar e receber. O interessado aprenderá também estratégias e técnicas de como otimizar todos seus resultados. Curso dividido em três módulos: cuidando do caixa, cuidando das contas a pagar e a receber e colocando a mão na massa.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Mais informações no link abaixo:</span></span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=78&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Controlar Meu Dinheiro</span></a></span></li>
-                        </ul>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Empreender</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Curso indicado para o empreendedor, que queira identificar seu real potencial para realização de projetos, com foco voltado a gestão, administração de dificuldades e a valorização do sucesso. Ao concluir o curso o empreendedor estará apto ao planejamento de suas ações de forma consciente e ser responsável em situações criticas em seu negócio. O curso Sebrae Sei Empreender é dividido em três módulos, que tratam dos seguintes temas: assumindo o controle, vencendo dificuldades e valorizando o sucesso.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Mais informações no link abaixo:</span></span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=80&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sebrae Sei Empreender</span></a></span></li>
-                        </ul>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Planejar</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O empreendedor estará a conhecer, a importância do planejamento a garantir a realização de metas e melhorias em seus resultados. O curso Sei Planejar tem como objetivo contribuir para a organização e crescimento do empreendimento, ajudando a colocar em prática os objetivos e metas traçados com o uso das ferramentas certas para &nbsp;planejar.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O curso possui três módulos, que tratam dos seguintes temas: planejamento empreendedor, aspectos do planejamento e planejamento na prática. Mais informações no link abaixo:</span></span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=79&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Planejar</span></a></span></li>
-                        </ul>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Unir Forças para Melhorar</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para empreendedores individuais que tenham interesse em desenvolver os conhecimentos relacionados à gestão do negócio com foco em empreendimentos coletivos, visando ao atendimento de necessidades comuns e à melhoria da competitividade de seus negócios. O curso Sei Unir Forças para Melhorar tem por objetivo ajudar o empreendedor compreender, quais as melhores ações coletivas, levam a aperfeiçoar a administração de seu negócio e em conjunto a solidificação e o fortalecimento no mercado. O curso tem três módulos, que auxiliam nos seguintes temas: Cooperar – unir forças para melhorar; Vantagens de empreender coletivamente e Plano de ação coletiva. Mais informações no link abaixo:</span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=82&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Unir Forças para Melhorar</span></a></span></li>
-                        </ul>
-                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Vender</span></b></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para o empreendedor individual, que deseja obter conhecimentos relacionados ao processo de vendas com foco na adoção do composto de marketing, a fim de entender as necessidades do mercado e ampliar as possibilidades de crescimento no negócio. O curso contribui para que o empreendedor aplique em suas vendas os conceitos do composto de marketing: produto, cliente, preço, ponto e promoção. Trabalhando de forma acoplada e visando beneficiar o cliente. O curso possui dois módulos, que abordam os seguintes temas: Conhecendo os componentes de vendas e Pensando no futuro. Mais informações no link abaixo:</span></p>
-                        <ul>
-                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=83&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Vender</span></a></span></li>
-                        </ul>
-                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Bons negócios a todos!</span></p></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
+                               <div class="art-article"><p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="color: black; font-family: Verdana, sans-serif; font-size: 9pt; line-height: 13.5pt;">Atualmente o</span><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/"><span style="color: #9551b3;">Portal de Educação Sebrae</span></a>, oferece diversos cursos realizados pela internet, e melhor, tudo de forma gratuita. E com o objetivo de auxiliar clientes e leitores do site, em seus projetos de <a href="http://www.franquiasdeacai.com.br" rel="bookmark" title="Permanent Link to Franquias de Açaí">franquias de açaí,</a> compilamos informações relevantes de<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<b>cursos para empreendedor individual</b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">, ao qual entendemos que poderá servir como base, para quem deseja iniciar ou expandir no segmento de açaí e sorvetes com sucesso.</span></span></span></span></p>
+                                       <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><br /></span></span></span></span></span></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">De inicio o Portal de Educação Sebrae, recomenda a todos os interessados, a fazer primeiro o curso AE – Apreender a Empreender. Curso para interessados que queiram começar seu próprio negocio, com noções de como gerir seu empreendimento, ou para quem já possui seu negócio e deseja repensar seu modelo. O curso contém três módulos: mercado, finanças e empreendedorismo. Leia mais informações<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;<span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=SP&amp;id=55&amp;DemonstracaoAtiva=N"><span style="color: #9551b3;">aqui</span></a>.</span></span></span></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para todos os cursos, é permitida a inscrição de apenas uma matricula por vez. O interessado para realizar qualquer outro curso, deverá concluir o módulo ao qual tenha feito a matricula, para assim efetuar uma nova inscrição. Ao termino de cada curso, o aluno receberá o certificado de conclusão, onde poderá imprimir e autenticá-lo diretamente no próprio site. Os cursos têm duração de 30dias e alguns com duração de 60 dias, ambos com períodos de ambientação, facilitando a adaptação ao sistema virtual de ensino.</span></p>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae EI – Empreendedor Individual</span></b></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Curso vivamente indicado para quem deseja ou trabalha com carrinho de açaí, ou pequeno quiosque de açaí. Este curso também tem como objetivo, informar à importância da legalização de suas atividades, e dar a conhecer todos os benefícios de direito sobre a lei complementar numero 128, de 19 de dezembro de 2008. Veja neste curso as vantagens de se legalizar como empreendedor individual, como realizar o processo de legalização da atividade, onde poderá trabalhar e alem de outras informações de impostos a serem pagos e os benefícios de aposentadoria e auxilio doença ao qual terá direito. Mais informações<a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=38&amp;DemonstracaoAtiva=N"><span style="color: #9551b3;">aqui.</span></a></span></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Conhecendo o Programa de Cursos Sei (Sebrae Empreendedor Individual)</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O programa traz soluções para temas básicos, auxiliando na administração e fortalecimento na estrutura das micros e pequenas empresas. Oferece seis diferentes temáticas, com a metodologia visando o desenvolvimento básico, para melhorar e construir a gestão do negócio. O conceito é dividido em seis cursos, sendo eles: SEI Empreender, SEI Comprar, SEI Vender, SEI Planejar, SEI Controlar Meu Dinheiro e SEI Unir Forças para Melhorar.</span></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Por meio de uma biblioteca virtual, o empreendedor interessado poderá acessar o curso, imprimir ou arquiva-lo. Veja a seguir um breve resumo de todos os cursos citados acima e link para mais informações.</span></p>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Comprar</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O curso tem como objetivo capacitar o empreendedor, a administrar e planejar suas compras junto a fornecedores. Aprenda dicas e estratégias relevantes, a fim de adquiri boas compras e prazos favoráveis, que certamente farão diferença na qualidade do produto final, bem como a lucratividade esperada. As aulas são divididas em quatro módulos:<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Questões instigadoras; Realizando boas compras; Vamos às compras e As respostas que preciso. Mais informações no link abaixo:</span></span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=81&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Comprar</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Controlar Meu Dinheiro</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Este curso fornece conhecimento ao empreendedor, sobre boas praticas de uso do dinheiro, a fim de realizar melhor o fluxo de caixa, contas a pagar e receber. O interessado aprenderá também estratégias e técnicas de como otimizar todos seus resultados. Curso dividido em três módulos: cuidando do caixa, cuidando das contas a pagar e a receber e colocando a mão na massa.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Mais informações no link abaixo:</span></span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=78&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Controlar Meu Dinheiro</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Empreender</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Curso indicado para o empreendedor, que queira identificar seu real potencial para realização de projetos, com foco voltado a gestão, administração de dificuldades e a valorização do sucesso. Ao concluir o curso o empreendedor estará apto ao planejamento de suas ações de forma consciente e ser responsável em situações criticas em seu negócio. O curso Sebrae Sei Empreender é dividido em três módulos, que tratam dos seguintes temas: assumindo o controle, vencendo dificuldades e valorizando o sucesso.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Mais informações no link abaixo:</span></span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=80&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sebrae Sei Empreender</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Planejar</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 0cm 18.75pt 0.0001pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O empreendedor estará a conhecer, a importância do planejamento a garantir a realização de metas e melhorias em seus resultados. O curso Sei Planejar tem como objetivo contribuir para a organização e crescimento do empreendimento, ajudando a colocar em prática os objetivos e metas traçados com o uso das ferramentas certas para &nbsp;planejar.<b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">&nbsp;</span></b><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">O curso possui três módulos, que tratam dos seguintes temas: planejamento empreendedor, aspectos do planejamento e planejamento na prática. Mais informações no link abaixo:</span></span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=79&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Planejar</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Unir Forças para Melhorar</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para empreendedores individuais que tenham interesse em desenvolver os conhecimentos relacionados à gestão do negócio com foco em empreendimentos coletivos, visando ao atendimento de necessidades comuns e à melhoria da competitividade de seus negócios. O curso Sei Unir Forças para Melhorar tem por objetivo ajudar o empreendedor compreender, quais as melhores ações coletivas, levam a aperfeiçoar a administração de seu negócio e em conjunto a solidificação e o fortalecimento no mercado. O curso tem três módulos, que auxiliam nos seguintes temas: Cooperar – unir forças para melhorar; Vantagens de empreender coletivamente e Plano de ação coletiva. Mais informações no link abaixo:</span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=82&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Unir Forças para Melhorar</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 0cm 0cm 0.0001pt 7.5pt; line-height: 22.5pt;"><b><span style="font-size: 16.5pt; font-family: Arial, sans-serif; color: #515151;">Curso Sebrae Sei Vender</span></b></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"></p>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Para o empreendedor individual, que deseja obter conhecimentos relacionados ao processo de vendas com foco na adoção do composto de marketing, a fim de entender as necessidades do mercado e ampliar as possibilidades de crescimento no negócio. O curso contribui para que o empreendedor aplique em suas vendas os conceitos do composto de marketing: produto, cliente, preço, ponto e promoção. Trabalhando de forma acoplada e visando beneficiar o cliente. O curso possui dois módulos, que abordam os seguintes temas: Conhecendo os componentes de vendas e Pensando no futuro. Mais informações no link abaixo:</span></p>
+                                        <ul>
+                                            <li><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;"><a href="http://www.ead.sebrae.com.br/hotsite/cursos/curso.asp?Seg=EI&amp;id=83&amp;DemonstracaoAtiva=N"><span style="color: blue;">Sei Vender</span></a></span></li>
+                                        </ul>
+                                        <p style="margin: 7.5pt 18.75pt 3.75pt 7.5pt; text-align: justify; line-height: 13.5pt;"><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: black;">Bons negócios a todos!</span></p></div>
+                         </div>
 
 
-<h3 id="toggle2"><a href="#" title="Destaque 02">Vantagens para se comercializar o Creme de Açaí</a></h3>
 
+<h3 id="toggle2"><a href="#" title="Destaque 01">Estudo da Embrapa mostra composição química do açaí</a></h3>
 <div class="mostrar2">
     <div class="art-layout-cell art-content">
-
         <div class="item-page"><div class="art-box art-post">
             <div class="art-box-body art-post-body">
                 <div class="art-post-inner">
-                    <div class="art-postcontent">
-                        <div class="art-article"><p style="line-height: normal;"><span style="font-size: 10.5pt; font-family: 'Arial','sans-serif'; color: #333333;">Um dos melhores períodos para se ganhar dinheiro com alimentos é o verão. E o açaí desponta como um dos produtos mais consumidos neste período. Por isso, listamos as vantagens de se comprar o creme de açaí já batido para aproveitar este período do verão. </span></p>
-
-                            <p style="line-height: normal;"><span style="font-size: 10.5pt; font-family: 'Arial','sans-serif'; color: #333333;"><br /></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">CUSTOS :</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">A POLPA DO AÇAÍ CUSTA EM MÉDIA DE R$ 5,60 A R$ 7,00 Kg</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">GARRAFA DE GUARANÁ EM MÉDIA R$ 12,50</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">+</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..FRUTAS USADAS NA MISTURA SEM CONTAR AS QUE ESTRAGAM</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..ENERGIA ELÉTRICA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..AGUA (PARA LAVAR OS UTENSILIOS USADOS), E MATERIA DE LIMPEZA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..CUSTO DE TRANSPORTE DA POLPA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..CUSTO DE ESTOQUE DA POLPA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..DIMINUIÇÃO DE VIDA UTIL DE UNIFORMES POR MANCHAS ETC.:</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..LUVAS , TOUCAS E MÁSCARAS QUANDO USADOS (DEVERIAM SER)</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..PERDAS NA HORA DE QUEBRAR AS PEDRAS EM MÉDIA 05 %</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">O QUE GERA UM CUSTO MÉDIO DE R$ 7,90 O LITRO</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">OUTRAS DIFICULDADES:</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..SUJA TODO O LOCAL</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..OCASIONALMENTE QUEBRA DE TRITURADORES</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..PERDA DE LONGO TEMPO NO PREPARO E DEPOIS LIMPEZA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
-                            <p style="line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..GERALMENTE O MODO DE PREPARO NÃO SEGUE NORMAS SANITÁRIAS</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p></div>
-                    </div>
-                    <div class="cleared"></div>
-                    <div class="art-postfootericons art-metadata-icons">
-                        <span class="art-postcategoryicon">Categoria: <span class="art-post-metadata-category-name"><a href="/2-uncategorised.html">Uncategorised</a></span></span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </div>
-            </div>
-
-<h3 id="toggle3"><a href="#" title="Destaque 03">O que é Açaí Pirata e como se proteger</a></h3>
-<div class="mostrar3">
-    <div class="art-layout-cell art-content">
-
-        <div class="item-page"><div class="art-box art-post">
-            <div class="art-box-body art-post-body">
-                <div class="art-post-inner">
-                    <div class="art-postcontent">
-                        <div class="art-article"><p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Como se pode perceber em nosso site, estamos chamando a atenção de nossos clientes e futuros clientes para um sério problema que infelizmente parece estar virando moda entre algumas fabricas de creme de açaí que já são antigas no mercado ou mesmo as que estão nascendo.</span></p>
-                            <span style="color: #000000;"> </span>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><br /></span></p>
-                            <span style="color: #000000;"><img style="float: left;" src="/images/stories/fabio.jpg" />Na verdade isso tem haver com a grande difusão deste fruto em nosso estado, com as vendas muito aquecidas, algumas empresas tem capital para investir em novas tecnologias e equipamentos modernos para não só aperfeiçoar sua produção como também para reduzir seus custos. </span>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Com isso as Produtoras de sorvetes começam a entrar na briga como 'a salvação do mercado de açaí', elas, apesar de custarem pequenas fortunas também diminuem muito os custos com a produção viabilizando o investimento e com um retorno espetacular, porém, na verdade quem paga a conta é o cliente final, o seu cliente!</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Como funciona esta produção em larga escala? Estes equipamentos tem a seguinte missão para diminuir custos, aumentar a produção com o mínimo de matéria prima (Açaí), ou seja, com um quilo de açaí é possível fazer quase quatro litros de creme de açaí, exatamente como é feito com o sorvete, dependendo do ponto de vista, não tem problema nenhum, desde que o sabor agrade a seus clientes.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Na verdade o problema começa a aparecer quando olhando mais atentamente para o mercado e nos perguntamos por que nossos clientes preferem tomar um copo de açaí a uma taça de sorvete que muitas vezes ainda é mais barata, a resposta você já sabe, o Açaí é energético, fonte de muitos nutrientes, vitaminas etc.(e quando o açaí passa por uma destas produtoras, onde inclusive é adicionada, água, emulsificante, goma, e até mesmo ar, isso mesmo estes equipamentos injetam até 70% de ar assim como nos sorvetes, desta forma o açaí perde completamente seus nutrientes, passa a ser apenas uma espuma, acho que vender sorvete de açaí a seus clientes não parece ser uma boa estratégia para lucrar mais, o cliente pode até comprar uma ou duas vezes, mas logo perceberá que está sendo enganado, isso mesmo, você não leu errado, enganado, é assim que ele vai se sentir quando perceber a troca de produtos sabemos que esse tipo de produto pode ser comprado até mais barato, e pode lhe dar uma falsa impressão que seus lucros vão aumentar, mas na medida em que você for perdendo suas vendas perceberá que também foi enganado.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Às vezes recebo ligações de clientes me dizendo que compraram açaí em outros lugares movidos por um desconto de alguns reais, mas que não sabem o que aconteceu, pois estão perdendo seus clientes, assim que identifico o problema explico, que inclusive a Lokos Por Açaí nem considera tais fabricas ou distribuidoras como concorrentes, pelo simples fato de que não vendemos o mesmo produto. Alguns vendedores de equipamentos para sorveteria já bateram aqui em nossa porta oferecendo lucros maiores, mas nossa empresa não vai sucumbir a cair tanto em nossa qualidade, deixar que nosso produto premiado, que tem agradado a cada vez mais clientes perca aquilo que ele tem de mais valor, seu valor energético. Sabemos que nossos lucros estão em nossa qualidade, que mantendo os clientes de nossos clientes satisfeitos sempre teremos novas vendas e que nossa maior meta é fazer com que nossos clientes ganhem dinheiro.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="font-size: 12pt; color: #000000;"><strong>Formas de identificar o Açaí Pirata,</strong></span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste do peso</strong> - a caixa de 10 litros da Lokos Por Açaí pesa de 9,5 kg a 11 kg e o açaí pirata não passam de 06 kg.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste do preço</strong> - Desconfie sempre que a caixa de Açaí estiver muito abaixo do preço de mercado.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste da comparação</strong> - Se você já for cliente da Lokos Por Açaí e receber uma proposta de um novo fornecedor, faça o seguinte, pegue um copo de 200ml de Açaí Lokos Por Açaí e outro copo de 200 Ml do outro, deixe derreter, o copo de açaí da Lokos Por Açaí vai continuar com 200 Ml e com uma textura muito viscosa e grossa, se o outro copo reduzir seu volume para menos da metade do copo, ou mesmo ficar muito ralo como água, evite este novo fornecedor, ele quer lhe vender Açaí Pirata.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">A Lokos Por Açaí vende Açaí in natura, batido em equipamentos que apenas fazem a mistura do fruto com o guaraná e a fruta de sua escolha, sem adição de nenhum produto ou equipamento que aumente o volume, Quando comprar Lokos Por Açaí, você não estará só comprando o melhor açaí do mercado, está levando para seu negócio a garantia de sucesso.</span></p>
-                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Abraços e até o próximo informe,</span></p>
-
-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<h3 id="toggle4"><a href="#" title="Destaque 04">Carrinho de açaí é um pequeno mas lucrativo negócio</a></h3>
-<div class="mostrar4">
-    <div class="art-layout-cell art-content">
-
-        <div class="item-page"><div class="art-box art-post">
-            <div class="art-box-body art-post-body">
-                <div class="art-post-inner">
-                    <div class="art-postcontent">
-                        <div class="art-article"><p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">O carrinho de açaí é prático, exige pouco investimento e atrai clientes por onde passa. O empresário José Nobre da Costa fabrica carrinhos para pequenos negócios há 27 anos. Ele começou como ambulante, vendendo pipoca na rua...</span></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">&nbsp;</span></p>
-
-                            <p></p>
-                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">Depois de fazer o primeiro modelo, não parou mais. Hoje fabrica carrinho de pipoca, de milho verde, churrasco e tapioca. Mas, o campeão de vendas é o carrinho de açaí. <br /></span></p>
-                            <p></p>
-                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">“Um ano mais ou menos para cá, entrou esse negócio de açaí, a novidade, é muita novidade, então, pegou, né? Então, isso está vendendo muito bem. Hoje, nós vendemos em torno de uns 50 carrinhos por mês ou mais”, diz José.&nbsp;<br /> Toda a produção é feita nos fundos da loja do empresário. Lá, as chapas de aço são cortadas, dobradas, soldadas e o carrinho é montado. O empresário calcula um investimento de R$ 100 mil para montar uma fábrica de carrinhos.&nbsp;<br /> <br /> “Todos os modelos eu mesmo inventei, ninguém me ensinou, eu fiz da própria minha cabeça”, lembra José Nobre.&nbsp;<br /> <br /> O carrinho de açaí custa R$ 800. É feito em aço inox, vem com três pneus, caixa térmica de fibra de vidro e reservatório para copos e granola.&nbsp;<br /> <br /> “Quando eu comecei, eu não tinha nada. Hoje, eu tenho mais ou menos uma renda de mais ou menos R$ 10 mil por mês, estamos, hoje, com 10 funcionários. Chegamos a ter 18, agora estamos só com 10, nós estamos contratando mais 10”, destaca o empresário.&nbsp;<br /> <br /> Francisco de Sousa é cliente do empresário José Nobre. Ele comprou um carrinho no início deste ano.&nbsp;<br /> <br /> Para quem passou um ano correndo atrás de emprego, as rodas do carrinho têm um significado muito especial. O carrinho de açaí foi a oportunidade para o empresário Francisco de Souza mudar de vida. Todos os dias, ele instala o pequeno negócio numa movimentada calçada. Sem custos com aluguel ou propaganda, Francisco, que tem licença da prefeitura, fatura R$ 4,2 mil por mês, vendendo açaí com frutas e granola.&nbsp;<br /> <br /> Dentro do carrinho, Francisco de Souza guarda as frutas, a granola e o leite condensado. Ele capricha até derramar, para atrair quem passa. E dá certo: os clientes fazem fila na frente do carrinho de açaí. O empresário vende 400 copos de açaí por semana.&nbsp;<br /> <br /> “Muito bom, muito bom, melhor que um sanduíche”, elogia a cliente Cristiane Feiteiro.&nbsp;<br /> “Sempre, sempre que passo aqui, procuro ele, o carrinho dele”, conta a cliente Glória Silva.&nbsp;<br /> <br /> O próprio empresário fabrica o açaí e aumenta a margem de lucro. O custo de um copo de 200 gramas de açaí é de R$ 0,75, o preço de venda é de R$ 2.&nbsp;<br /> <br /> “A mão de obra não tem porque é você mesmo que faz, luz você não paga, você já gasta de casa mesmo, aluguel você não paga porque trabalha na rua mesmo, então não tem despesa, só com o próprio açaí”, destaca Francisco de Souza.&nbsp;<br /> <br /> A licença da prefeitura garante um lugar fixo para o empresário, mas ele também pode mudar de ponto atrás de mais movimento. Em menos de um ano com o carrinho, a procura só cresce. O empresário já pensa em expandir o negócio.&nbsp;<br /> <br /> “Meus planos são ou aumentar esse carrinho e pegar um carrinho maior, ou montar um quiosque aqui”, diz ele.&nbsp;<br /> <br /> Valmir e Margarete compraram o carrinho de açaí há dois anos. Ele largou o emprego de barman para montar o negócio e não se arrepende. “Com o dinheiro do carrinho eu consigo pagar meu aluguel, consigo pagar água, consigo pagar luz, consigo pagar telefone e até fazer uma economiazinha, inclusive eu estou até encomendando um outro carrinho pra ampliar o negócio”, conta Valmir.&nbsp;<br /> <br /> Os empresários escolheram um quarteirão movimentado. Ponto de ônibus, padaria e bancos atraem consumidores.&nbsp;<br /> <br /> “Adoro como sobremesa, é uma delícia, além de ser saudável. É muito bom, ó, muito bom!”, conta a cliente Simone da Silva.&nbsp;<br /> <br /> “A procura é grande, pedestres, ciclistas, motoristas de ônibus, cobradores, muitos descem da lotação e procuram, já vêm direto, a gente está todo dia aqui”, destaca a empresária Margarete Guimarães.&nbsp;<br /> <br /> Valmir e Margarete têm autorização da prefeitura e da vigilância sanitária para trabalhar. Eles se diferenciam no mercado e servem o açaí com sorvete de cupuaçu.&nbsp;<br /> <br /> “Dá um sabor a mais no açaí, fica mais gostoso”, acredita o cliente Marcelo Vasconcelos.&nbsp;<br /> <br /> Os empresários compram o açaí pronto. O custo de cada copinho de 200 ml é de R$ 1 e eles vendem pelo dobro. Por mês, saem 1,4 mil copinhos, com um faturamento de R$ 2,8 mil. No verão, o movimento dobra.&nbsp;<br /> <br /> “No mesmo esquema que eu faço aqui na rua, pretendo fazer também em festas. Eu espero que venda 10 vezes mais!”, diz Valmir Dama.</span></p></div>
-                    </div>
-
-</div>
-<h3 id="toggle5"><a href="#" title="Destaque 05">8 Motivos para você consumir Açaí ainda Hoje</a></h3>
-<div class="mostrar5">
-    <div class="art-layout-cell art-content">
-
-        <div class="item-page"><div class="art-box art-post">
-            <div class="art-box-body art-post-body">
-                <div class="art-post-inner">
-                    <div class="art-postcontent">
-                        <div class="art-article"><p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;"><span style="font-size: 12pt; line-height: 115%;">Em nosso segmento de mercado açaí entre outras frutas exóticas, temos como missão expandir e incentivar o consumo a todos que pretendem ou já aderiram uma alimentação saudável e energética. </span></span></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">&nbsp;</span></p>
-
-                            <p>&nbsp;</p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';">Nessa safra de super frutas, destacam-se o açai, alimento indispensável para atletas de todos os níveis e pessoas que na correria do dia a dia preferem consumi-lo, entre um lanche ou fritura que muitos optam em consumir às vezes pela falta de tempo em pausar para o desjejum, almoço ou jantar.</span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';">Descubram neste artigo 8 motivos que levará você a consumir açai ainda hoje, no copo, na tigela ou em creme de açaí. Caso falte sugestão de receitas para o consumo, não deixe de ler nosso artigo: 10 Fantásticas receitas de creme de açai a conhecer e descubra uma variedade de opções e adicionais a não perder. Veja abaixo quais os oito motivos que mais chamam a nossa atenção e que certamente o incentivará a consumir e divulgar seus benefícios.</span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">1. AÇAI O FRUTO REJUVENESCEDOR </span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Fruto rejuvenescedor, capaz de retardar o envelhecimento por sua alta dose de antioxidantes. O açai contém antioxidantes, conjunto heterogêneo de substancias composto por vitaminas, minerais, pigmentos e enzimas que combatem radicais livres. Em estudo realizado pela Universidade da Flórida, pesquisadores mostram que o açai tem a capacidade de combater células cancerígenas em até 86% de eficácia. O consumo regular do açai pode reduzir drasticamente doenças cancerígenas e entre outras causadas por radicais livres.</span></p>
-                            <p style="line-height: normal;"><span style="color: #000000;"><strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">2. AÇAI COMO ACELERADOR MUSCULAR</span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">O fruto do açai possui alto teor de proteínas. As proteínas têm como uma de suas funções a formação de aminoácidos, o principal construtor muscular. Outra importante função das proteínas é a contribuição para a produção de anticorpos (células de defesa do organismo), fortalecendo o sistema imunológico e aumentando a capacidade de combater infecções.</span></p>
-                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">3. AÇAI REDUTOR DE COLESTEROL</span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Em estudo realizado pela Universidade Federal do Pará, pesquisadores apontam abaixo colesterol em pessoas com consumo regular de açai, comparadas a não consumidores. A diminuição do mau colesterol deve-se ao corante do açaí, a antocianina, também presente em uvas e alimentos com a coloração roxa. Mas para se ter uma idéia, um litro de açaí tem até 35 vezes mais antocianina do que um litro de vinho tinto.</span></p>
-                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">4. AÇAI = A CÁLCIO = A OSSOS FORTES</span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">O açai possui alta concentração de cálcio, essencial para formação dos ossos e dentes, portanto muito recomendado para crianças. Para os adultos a quantidade diária recomendada ajuda a prevenir doenças como a osteoporose e a hipertensão.</span></p>
-                            <p style="line-height: normal;"><span style="color: #000000;"><strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">5. AÇAI FONTE DE ENERGIA PARA ATLETAS</span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Muito consumido por atletas, o açai contém alta concentração de carboidratos, essenciais para pratica de qualquer esporte. Aliado ao aminoácido o açai tem a função de regeneração muscular, ideal para manter o condicionamento físico apôs a atividade.</span></p>
-                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">6. AÇAI COM OU SEM AÇÚCAR </span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Para residentes de São Paulo, Rio de Janeiro e Minas Gerais entre outros estados, o açai é naturalmente consumido com xarope de guaraná, forma doce de saborear suco de açai, creme de açai, sorvetes e entre outros cardápios populares. Não deixe de ler também: 10 Fantásticas receitas de creme de açai a conhecer, onde receitas doces poderão incrementar seu consumo. Já popular em Regiões nativas do açai, ele é pode ser tradicionalmente consumido em pratos típicos, como em peixe, farinha e entre outros pratos salgados.</span></p>
-                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">7. O AÇAI É AFRODISÍACO</span></strong></span></p>
-                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Nativos da região Amazônica garantem que o açai pode e deve ser usado como afrodisíaco. Pesquisa já realizada, receita o açai para casais com dificuldades em engravidar, bem como homens com problemas de impotência. Para homens nada melhor que regularmente consumir um copo ou tigela de açai, para manter em dia seu apetite sexual.</span></p>
-                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">8. EVITE CÂIMBRAS, COMA AÇAI </span></strong></span></p>
-                            <p><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Com alta concentração de potássio, o açai pode ser fundamental ao combate a câimbras. Em conjunto com boa ingestão de líquidos durante a atividade física, este alimento energético pode reduzir por completo, as dolorosas câimbras causadas por desidratação.</span></p>
-                            <p><br style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;" /></p></div>
-                    </div>
-
-</div>
-            </div>
-
-        </div>
-        </div>
-
-    </div>
-</div>
-
-</div>
-
-<h3 id="toggle7"><a href="#" title="Destaque 07">Estudo da Embrapa mostra composição química do açaí</a></h3>
-<div class="mostrar7">
-    <div class="art-layout-cell art-content">
-
-        <div class="item-page"><div class="art-box art-post">
-            <div class="art-box-body art-post-body">
-                <div class="art-post-inner">
-                    <h2 class="art-postheader"><a href="/2-uncategorised/13-estudo-da-embrapa-mostra-composição-química-do-açaí.html" class="PostHeader">Estudo da Embrapa mostra composição química do açaí</a></h2>
                     <div class="art-postcontent">
                         <div class="art-article"><p style="font-family: Arial, Helvetica, sans-serif; font-size: small; color: #000000;">O açaí é considerado alimento de alto valor calórico, com elevado percentual de lipídeos, e nutricional, pois é rico em proteínas e minerais. Nas áreas de exploração extrativa, o açaí representa a principal base alimentar da população, notadamente dos ribeirinhos da região do estuário do Rio Amazonas.</p>
 
@@ -477,23 +340,167 @@
                             <p style="font-family: Arial, Helvetica, sans-serif; font-size: small; color: #000000;">Fonte: Embrapa&nbsp;</p>
                             <p><a href="http://sistemasdeproducao.cnptia.embrapa.br/FontesHTML/Acai/SistemaProducaoAcai/paginas/composicao.htm">http://sistemasdeproducao.cnptia.embrapa.br/FontesHTML/Acai/SistemaProducaoAcai/paginas/composicao.htm</a></p></div>
                     </div>
-
+                    <div class="cleared"></div>
+                    <div class="art-postfootericons art-metadata-icons">
+                        <span class="art-postcategoryicon">Categoria: <span class="art-post-metadata-category-name"><a href="/2-uncategorised.html">Uncategorised</a></span></span>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </div>
-</div>
-        </div>
+          </div>
         </div>
     </div>
 </div>
 
-<h3 id="toggle6"><a href="#" title="Destaque 06">O Funcionamento de uma maquina de açaí expresso frozen</a></h3>
 
+<h3 id="toggle3"><a href="#" title="Destaque 01">Vantagens de se comprar o Creme de Açaí para comercialização</a></h3>
+<div class="mostrar3">
+    <div class="art-layout-cell art-content">
+        <div class="item-page"><div class="art-box art-post">
+            <div class="art-box-body art-post-body">
+                <div class="art-post-inner">
+                    <div class="art-postcontent">
+                        <div class="art-article"><p style="line-height: normal;"><span style="font-size: 10.5pt; font-family: 'Arial','sans-serif'; color: #333333;">Um dos melhores períodos para se ganhar dinheiro com alimentos é o verão. E o açaí desponta como um dos produtos mais consumidos neste período. Por isso, listamos as vantagens de se comprar o creme de açaí já batido para aproveitar este período do verão. </span></p>
+
+                            <p style="line-height: normal;"><span style="font-size: 10.5pt; font-family: 'Arial','sans-serif'; color: #333333;"><br /></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">CUSTOS :</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">A POLPA DO AÇAÍ CUSTA EM MÉDIA DE R$ 5,60 A R$ 7,00 Kg</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">GARRAFA DE GUARANÁ EM MÉDIA R$ 12,50</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">+</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..FRUTAS USADAS NA MISTURA SEM CONTAR AS QUE ESTRAGAM</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..ENERGIA ELÉTRICA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..AGUA (PARA LAVAR OS UTENSILIOS USADOS), E MATERIA DE LIMPEZA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..CUSTO DE TRANSPORTE DA POLPA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..CUSTO DE ESTOQUE DA POLPA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..DIMINUIÇÃO DE VIDA UTIL DE UNIFORMES POR MANCHAS ETC.:</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..LUVAS , TOUCAS E MÁSCARAS QUANDO USADOS (DEVERIAM SER)</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..PERDAS NA HORA DE QUEBRAR AS PEDRAS EM MÉDIA 05 %</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">O QUE GERA UM CUSTO MÉDIO DE R$ 7,90 O LITRO</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">OUTRAS DIFICULDADES:</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..SUJA TODO O LOCAL</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..OCASIONALMENTE QUEBRA DE TRITURADORES</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="margin-bottom: 0.0001pt; line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..PERDA DE LONGO TEMPO NO PREPARO E DEPOIS LIMPEZA</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p>
+                            <p style="line-height: normal;"><b><span style="font-size: 12pt; font-family: 'Tahoma','sans-serif'; color: black;">..GERALMENTE O MODO DE PREPARO NÃO SEGUE NORMAS SANITÁRIAS</span></b><span style="font-size: 12pt; font-family: 'Times New Roman','serif';"></span></p></div>
+                    </div>
+                    <div class="cleared"></div>
+                    <div class="art-postfootericons art-metadata-icons">
+                        <span class="art-postcategoryicon">Categoria: <span class="art-post-metadata-category-name"><a href="/2-uncategorised.html">Uncategorised</a></span></span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<h3 id="toggle4"><a href="#" title="Destaque 01">O que é Açaí Pirata e como se proteger</a></h3>
+<div class="mostrar4">
+    <div class="art-layout-cell art-content">
+        <div class="item-page"><div class="art-box art-post">
+            <div class="art-box-body art-post-body">
+                <div class="art-post-inner">
+                    <div class="art-postcontent">
+                        <div class="art-article"><p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Como se pode perceber em nosso site, estamos chamando a atenção de nossos clientes e futuros clientes para um sério problema que infelizmente parece estar virando moda entre algumas fabricas de creme de açaí que já são antigas no mercado ou mesmo as que estão nascendo.</span></p>
+                            <span style="color: #000000;"> </span>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><br /></span></p>
+                            <span style="color: #000000;"><img style="float: left;" src="/images/stories/fabio.jpg" />Na verdade isso tem haver com a grande difusão deste fruto em nosso estado, com as vendas muito aquecidas, algumas empresas tem capital para investir em novas tecnologias e equipamentos modernos para não só aperfeiçoar sua produção como também para reduzir seus custos. </span>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Com isso as Produtoras de sorvetes começam a entrar na briga como 'a salvação do mercado de açaí', elas, apesar de custarem pequenas fortunas também diminuem muito os custos com a produção viabilizando o investimento e com um retorno espetacular, porém, na verdade quem paga a conta é o cliente final, o seu cliente!</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Como funciona esta produção em larga escala? Estes equipamentos tem a seguinte missão para diminuir custos, aumentar a produção com o mínimo de matéria prima (Açaí), ou seja, com um quilo de açaí é possível fazer quase quatro litros de creme de açaí, exatamente como é feito com o sorvete, dependendo do ponto de vista, não tem problema nenhum, desde que o sabor agrade a seus clientes.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Na verdade o problema começa a aparecer quando olhando mais atentamente para o mercado e nos perguntamos por que nossos clientes preferem tomar um copo de açaí a uma taça de sorvete que muitas vezes ainda é mais barata, a resposta você já sabe, o Açaí é energético, fonte de muitos nutrientes, vitaminas etc.(e quando o açaí passa por uma destas produtoras, onde inclusive é adicionada, água, emulsificante, goma, e até mesmo ar, isso mesmo estes equipamentos injetam até 70% de ar assim como nos sorvetes, desta forma o açaí perde completamente seus nutrientes, passa a ser apenas uma espuma, acho que vender sorvete de açaí a seus clientes não parece ser uma boa estratégia para lucrar mais, o cliente pode até comprar uma ou duas vezes, mas logo perceberá que está sendo enganado, isso mesmo, você não leu errado, enganado, é assim que ele vai se sentir quando perceber a troca de produtos sabemos que esse tipo de produto pode ser comprado até mais barato, e pode lhe dar uma falsa impressão que seus lucros vão aumentar, mas na medida em que você for perdendo suas vendas perceberá que também foi enganado.</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">Às vezes recebo ligações de clientes me dizendo que compraram açaí em outros lugares movidos por um desconto de alguns reais, mas que não sabem o que aconteceu, pois estão perdendo seus clientes, assim que identifico o problema explico, que inclusive a Lokos Por Açaí nem considera tais fabricas ou distribuidoras como concorrentes, pelo simples fato de que não vendemos o mesmo produto. Alguns vendedores de equipamentos para sorveteria já bateram aqui em nossa porta oferecendo lucros maiores, mas nossa empresa não vai sucumbir a cair tanto em nossa qualidade, deixar que nosso produto premiado, que tem agradado a cada vez mais clientes perca aquilo que ele tem de mais valor, seu valor energético. Sabemos que nossos lucros estão em nossa qualidade, que mantendo os clientes de nossos clientes satisfeitos sempre teremos novas vendas e que nossa maior meta é fazer com que nossos clientes ganhem dinheiro.</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="font-size: 12pt; color: #000000;"><strong>Formas de identificar o Açaí Pirata,</strong></span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste do peso</strong> - a caixa de 10 litros da Lokos Por Açaí pesa de 9,5 kg a 11 kg e o açaí pirata não passam de 06 kg.</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste do preço</strong> - Desconfie sempre que a caixa de Açaí estiver muito abaixo do preço de mercado.</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;"><strong>Teste da comparação</strong> - Se você já for cliente da Lokos Por Açaí e receber uma proposta de um novo fornecedor, faça o seguinte, pegue um copo de 200ml de Açaí Lokos Por Açaí e outro copo de 200 Ml do outro, deixe derreter, o copo de açaí da Lokos Por Açaí vai continuar com 200 Ml e com uma textura muito viscosa e grossa, se o outro copo reduzir seu volume para menos da metade do copo, ou mesmo ficar muito ralo como água, evite este novo fornecedor, ele quer lhe vender Açaí Pirata.</span></p>
+                            <p style="text-align: justify; text-indent: 35.4pt;"><span style="color: #000000;">A Lokos Por Açaí vende Açaí in natura, batido em equipamentos que apenas fazem a mistura do fruto com o guaraná e a fruta de sua escolha, sem adição de nenhum produto ou equipamento que aumente o volume, Quando comprar Lokos Por Açaí, você não estará só comprando o melhor açaí do mercado, está levando para seu negócio a garantia de sucesso.</span></p>
+
+                        </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h3 id="toggle5"><a href="#" title="Destaque 01">Carrinho de açaí é um pequeno mas lucrativo negócio</a></h3>
+<div class="mostrar5">
+    <div class="art-layout-cell art-content">
+        <div class="item-page"><div class="art-box art-post">
+            <div class="art-box-body art-post-body">
+                <div class="art-post-inner">
+                    <div class="art-postcontent">
+                        <div class="art-article"><p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">O carrinho de açaí é prático, exige pouco investimento e atrai clientes por onde passa. O empresário José Nobre da Costa fabrica carrinhos para pequenos negócios há 27 anos. Ele começou como ambulante, vendendo pipoca na rua...</span></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">&nbsp;</span></p>
+                            <p></p>
+                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">Depois de fazer o primeiro modelo, não parou mais. Hoje fabrica carrinho de pipoca, de milho verde, churrasco e tapioca. Mas, o campeão de vendas é o carrinho de açaí. <br /></span></p>
+                            <p></p>
+                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">“Um ano mais ou menos para cá, entrou esse negócio de açaí, a novidade, é muita novidade, então, pegou, né? Então, isso está vendendo muito bem. Hoje, nós vendemos em torno de uns 50 carrinhos por mês ou mais”, diz José.&nbsp;<br /> Toda a produção é feita nos fundos da loja do empresário. Lá, as chapas de aço são cortadas, dobradas, soldadas e o carrinho é montado. O empresário calcula um investimento de R$ 100 mil para montar uma fábrica de carrinhos.&nbsp;<br /> <br /> “Todos os modelos eu mesmo inventei, ninguém me ensinou, eu fiz da própria minha cabeça”, lembra José Nobre.&nbsp;<br /> <br /> O carrinho de açaí custa R$ 800. É feito em aço inox, vem com três pneus, caixa térmica de fibra de vidro e reservatório para copos e granola.&nbsp;<br /> <br /> “Quando eu comecei, eu não tinha nada. Hoje, eu tenho mais ou menos uma renda de mais ou menos R$ 10 mil por mês, estamos, hoje, com 10 funcionários. Chegamos a ter 18, agora estamos só com 10, nós estamos contratando mais 10”, destaca o empresário.&nbsp;<br /> <br /> Francisco de Sousa é cliente do empresário José Nobre. Ele comprou um carrinho no início deste ano.&nbsp;<br /> <br /> Para quem passou um ano correndo atrás de emprego, as rodas do carrinho têm um significado muito especial. O carrinho de açaí foi a oportunidade para o empresário Francisco de Souza mudar de vida. Todos os dias, ele instala o pequeno negócio numa movimentada calçada. Sem custos com aluguel ou propaganda, Francisco, que tem licença da prefeitura, fatura R$ 4,2 mil por mês, vendendo açaí com frutas e granola.&nbsp;<br /> <br /> Dentro do carrinho, Francisco de Souza guarda as frutas, a granola e o leite condensado. Ele capricha até derramar, para atrair quem passa. E dá certo: os clientes fazem fila na frente do carrinho de açaí. O empresário vende 400 copos de açaí por semana.&nbsp;<br /> <br /> “Muito bom, muito bom, melhor que um sanduíche”, elogia a cliente Cristiane Feiteiro.&nbsp;<br /> “Sempre, sempre que passo aqui, procuro ele, o carrinho dele”, conta a cliente Glória Silva.&nbsp;<br /> <br /> O próprio empresário fabrica o açaí e aumenta a margem de lucro. O custo de um copo de 200 gramas de açaí é de R$ 0,75, o preço de venda é de R$ 2.&nbsp;<br /> <br /> “A mão de obra não tem porque é você mesmo que faz, luz você não paga, você já gasta de casa mesmo, aluguel você não paga porque trabalha na rua mesmo, então não tem despesa, só com o próprio açaí”, destaca Francisco de Souza.&nbsp;<br /> <br /> A licença da prefeitura garante um lugar fixo para o empresário, mas ele também pode mudar de ponto atrás de mais movimento. Em menos de um ano com o carrinho, a procura só cresce. O empresário já pensa em expandir o negócio.&nbsp;<br /> <br /> “Meus planos são ou aumentar esse carrinho e pegar um carrinho maior, ou montar um quiosque aqui”, diz ele.&nbsp;<br /> <br /> Valmir e Margarete compraram o carrinho de açaí há dois anos. Ele largou o emprego de barman para montar o negócio e não se arrepende. “Com o dinheiro do carrinho eu consigo pagar meu aluguel, consigo pagar água, consigo pagar luz, consigo pagar telefone e até fazer uma economiazinha, inclusive eu estou até encomendando um outro carrinho pra ampliar o negócio”, conta Valmir.&nbsp;<br /> <br /> Os empresários escolheram um quarteirão movimentado. Ponto de ônibus, padaria e bancos atraem consumidores.&nbsp;<br /> <br /> “Adoro como sobremesa, é uma delícia, além de ser saudável. É muito bom, ó, muito bom!”, conta a cliente Simone da Silva.&nbsp;<br /> <br /> “A procura é grande, pedestres, ciclistas, motoristas de ônibus, cobradores, muitos descem da lotação e procuram, já vêm direto, a gente está todo dia aqui”, destaca a empresária Margarete Guimarães.&nbsp;<br /> <br /> Valmir e Margarete têm autorização da prefeitura e da vigilância sanitária para trabalhar. Eles se diferenciam no mercado e servem o açaí com sorvete de cupuaçu.&nbsp;<br /> <br /> “Dá um sabor a mais no açaí, fica mais gostoso”, acredita o cliente Marcelo Vasconcelos.&nbsp;<br /> <br /> Os empresários compram o açaí pronto. O custo de cada copinho de 200 ml é de R$ 1 e eles vendem pelo dobro. Por mês, saem 1,4 mil copinhos, com um faturamento de R$ 2,8 mil. No verão, o movimento dobra.&nbsp;<br /> <br /> “No mesmo esquema que eu faço aqui na rua, pretendo fazer também em festas. Eu espero que venda 10 vezes mais!”, diz Valmir Dama.</span></p></div>
+                    </div>
+                    <div class="cleared"></div>
+                    <div class="art-postfootericons art-metadata-icons">
+                        <span class="art-postcategoryicon">Categoria: <span class="art-post-metadata-category-name"><a href="/2-uncategorised.html">Uncategorised</a></span></span>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<h3 id="toggle6"><a href="#" title="Destaque 01">8 Motivos para você consumir Açaí ainda Hoje</a></h3>
 <div class="mostrar6">
     <div class="art-layout-cell art-content">
+        <div class="item-page"><div class="art-box art-post">
+            <div class="art-box-body art-post-body">
+                <div class="art-post-inner">
+                    <div class="art-postcontent">
+                        <div class="art-article"><p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;"><span style="font-size: 12pt; line-height: 115%;">Em nosso segmento de mercado açaí entre outras frutas exóticas, temos como missão expandir e incentivar o consumo a todos que pretendem ou já aderiram uma alimentação saudável e energética. </span></span></p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p><span style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;">&nbsp;</span></p>
+                            <p>&nbsp;</p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';">Nessa safra de super frutas, destacam-se o açai, alimento indispensável para atletas de todos os níveis e pessoas que na correria do dia a dia preferem consumi-lo, entre um lanche ou fritura que muitos optam em consumir às vezes pela falta de tempo em pausar para o desjejum, almoço ou jantar.</span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';">Descubram neste artigo 8 motivos que levará você a consumir açai ainda hoje, no copo, na tigela ou em creme de açaí. Caso falte sugestão de receitas para o consumo, não deixe de ler nosso artigo: 10 Fantásticas receitas de creme de açai a conhecer e descubra uma variedade de opções e adicionais a não perder. Veja abaixo quais os oito motivos que mais chamam a nossa atenção e que certamente o incentivará a consumir e divulgar seus benefícios.</span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">1. AÇAI O FRUTO REJUVENESCEDOR </span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Fruto rejuvenescedor, capaz de retardar o envelhecimento por sua alta dose de antioxidantes. O açai contém antioxidantes, conjunto heterogêneo de substancias composto por vitaminas, minerais, pigmentos e enzimas que combatem radicais livres. Em estudo realizado pela Universidade da Flórida, pesquisadores mostram que o açai tem a capacidade de combater células cancerígenas em até 86% de eficácia. O consumo regular do açai pode reduzir drasticamente doenças cancerígenas e entre outras causadas por radicais livres.</span></p>
+                            <p style="line-height: normal;"><span style="color: #000000;"><strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">2. AÇAI COMO ACELERADOR MUSCULAR</span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">O fruto do açai possui alto teor de proteínas. As proteínas têm como uma de suas funções a formação de aminoácidos, o principal construtor muscular. Outra importante função das proteínas é a contribuição para a produção de anticorpos (células de defesa do organismo), fortalecendo o sistema imunológico e aumentando a capacidade de combater infecções.</span></p>
+                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">3. AÇAI REDUTOR DE COLESTEROL</span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Em estudo realizado pela Universidade Federal do Pará, pesquisadores apontam abaixo colesterol em pessoas com consumo regular de açai, comparadas a não consumidores. A diminuição do mau colesterol deve-se ao corante do açaí, a antocianina, também presente em uvas e alimentos com a coloração roxa. Mas para se ter uma idéia, um litro de açaí tem até 35 vezes mais antocianina do que um litro de vinho tinto.</span></p>
+                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">4. AÇAI = A CÁLCIO = A OSSOS FORTES</span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">O açai possui alta concentração de cálcio, essencial para formação dos ossos e dentes, portanto muito recomendado para crianças. Para os adultos a quantidade diária recomendada ajuda a prevenir doenças como a osteoporose e a hipertensão.</span></p>
+                            <p style="line-height: normal;"><span style="color: #000000;"><strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">5. AÇAI FONTE DE ENERGIA PARA ATLETAS</span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Muito consumido por atletas, o açai contém alta concentração de carboidratos, essenciais para pratica de qualquer esporte. Aliado ao aminoácido o açai tem a função de regeneração muscular, ideal para manter o condicionamento físico apôs a atividade.</span></p>
+                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">6. AÇAI COM OU SEM AÇÚCAR </span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Para residentes de São Paulo, Rio de Janeiro e Minas Gerais entre outros estados, o açai é naturalmente consumido com xarope de guaraná, forma doce de saborear suco de açai, creme de açai, sorvetes e entre outros cardápios populares. Não deixe de ler também: 10 Fantásticas receitas de creme de açai a conhecer, onde receitas doces poderão incrementar seu consumo. Já popular em Regiões nativas do açai, ele é pode ser tradicionalmente consumido em pratos típicos, como em peixe, farinha e entre outros pratos salgados.</span></p>
+                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">7. O AÇAI É AFRODISÍACO</span></strong></span></p>
+                            <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Nativos da região Amazônica garantem que o açai pode e deve ser usado como afrodisíaco. Pesquisa já realizada, receita o açai para casais com dificuldades em engravidar, bem como homens com problemas de impotência. Para homens nada melhor que regularmente consumir um copo ou tigela de açai, para manter em dia seu apetite sexual.</span></p>
+                            <p style="line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">&nbsp;<strong><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">8. EVITE CÂIMBRAS, COMA AÇAI </span></strong></span></p>
+                            <p><span style="font-size: 12pt; font-family: 'Times New Roman','serif'; color: #000000;">Com alta concentração de potássio, o açai pode ser fundamental ao combate a câimbras. Em conjunto com boa ingestão de líquidos durante a atividade física, este alimento energético pode reduzir por completo, as dolorosas câimbras causadas por desidratação.</span></p>
+                            <p><br style="font-size: 10.5pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #333333;" /></p></div>
+                    </div>
+                    <div class="cleared"></div>
+                    <div class="art-postfootericons art-metadata-icons">
+                        <span class="art-postcategoryicon">Categoria: <span class="art-post-metadata-category-name"><a href="/2-uncategorised.html">Uncategorised</a></span></span>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+</div>
 
+<h3 id="toggle7"><a href="#" title="Destaque 01">O Funcionamento de uma maquina de açaí expresso frozen</a></h3>
+<div class="mostrar7">
+    <div class="art-layout-cell art-content">
         <div class="item-page"><div class="art-box art-post">
             <div class="art-box-body art-post-body">
                 <div class="art-post-inner">
@@ -517,11 +524,11 @@
                             <p style="line-height: normal;"><b><span style="font-size: 18pt; font-family: 'Times New Roman','serif';">JÁ POSSUO UM EQUIPAMENTO DE SORVETE EXPRESSO, POSSO TRABALHAR COM O AÇAI?</span></b></p>
                             <p style="text-align: justify; line-height: normal;"><span style="font-size: 12pt; font-family: 'Times New Roman','serif';">Sim, para isto você deverá ter controle sobre a temperatura do equipamento. Indiferente do sorvete, ao qual sua base é composta por leite, o açaí tem como base o xarope de guaraná em sua composição. Por essa razão deve-se encontrar a temperatura ideal no equipamento, a obter o açaí no formato frozen, cremoso e macio. Aconselhamos o contato junto ao fabricante de seu equipamento para mais detalhes sobre o processo.</span></p>
                             <br /></div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-        </div>
+             </div>
+           </div>
         </div>
     </div>
 </div>
