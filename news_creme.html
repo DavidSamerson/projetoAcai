@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lokos por Açaí</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <style type="text/css">
+
+        p {color: black; text-align: justify;}
+        h1 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h2 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h3 {color: #3f2161;}
+        h4 {color: #3f2161; text-align: center;}
+
+        .carousel-indicators .active {
+            background-color: #3f2161;
+        }
+        .corborda li {
+            border: 1px solid #3f2161;
+        }
+
+    </style>
+
+
+
+    <style>
+        .thumbnails {
+            max-width: 40%;
+        }
+
+        .italic { font-style: italic; }
+        .small { font-size: 0.8em; }
+
+        /** LIGHTBOX MARKUP **/
+
+        .lightbox {
+            /** Default lightbox to hidden */
+            display: none;
+
+            /** Position and style */
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            top: 0;
+            left: 0;
+            background: rgba(20, 30, 0, 0.8);
+        }
+
+        .lightbox img {
+            /** Pad the lightbox image */
+            max-width: 90%;
+            max-height: 80%;
+            margin-top: 2%;
+        }
+
+        .lightbox:target {
+            /** Remove default browser outline */
+            outline: none;
+
+            /** Unhide lightbox **/
+            display: block;
+        }
+    </style>
+
+
+
+    <style>
+        * {margin:0; padding: 0;}
+        html, body {height:100%;}
+
+        /** formata elementos que tem backgrounds parallax **/
+
+        .bgParallax {
+
+            color:#FFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            position: relative;
+            min-height: 50%;
+
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Define backgrounds dos divs */
+        #quemsomos {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+        #missao {
+            background-image: url(assets/img/backgrounds/açai.png);
+
+        }
+
+        #teste {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+
+        /** Formata o article que vai o texto **/
+        .bgParallax article {
+            width: 70%;
+            text-align: center;
+            margin:0 auto;
+            padding:20% 0 0;
+        }
+
+        /** formata texto **/
+        article h1 {font-size:40px;}
+        article p {line-height: 30px; font-size:20px; margin-top:15px;}
+        article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+        @media (max-width: 767px) {
+            .page-header, .control-box {
+                text-align: center;
+            }
+        }
+        @media (max-width: 479px) {
+            .caption {
+                word-break: break-all;
+            }
+        }
+        .thumbnails li> .fff .caption {
+            background:#fff !important;
+            padding:10px
+        }
+        .page-header h3 {
+            line-height: 0.88rem;
+            color: #000;
+        }
+
+        ul.thumbnails {
+            margin-bottom: 0px;
+        }
+        li { list-style-type:none;}
+
+        ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+        ::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+        a {
+            -webkit-transition: all 150ms ease;
+            -moz-transition: all 150ms ease;
+            -ms-transition: all 150ms ease;
+            -o-transition: all 150ms ease;
+            transition: all 150ms ease;
+        }
+
+        a:hover {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+            filter: alpha(opacity=50); /* IE7 */
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+    </style>
+
+
+
+    <style type="text/css">
+
+        @media (max-width: 389px){
+            .espaço{margin-top: 15%}
+        }
+        @media (max-width: 1024px) {
+            .navCor{
+                background-color: #3f2161;
+            }
+            .escolhaMenu{
+                margin-left: 30%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .navCor{
+                background-color: transparent;
+            }
+            .navImage{
+                background-image: url('Imagens/Menu/menu_logo.png');
+                padding-bottom: 6%;
+            }
+        }
+    </style>
+    <style type="text/css">
+        *{ /*Formata todos os elementos da página*/
+            padding:0px; /*espaço entre a borda e o conteúdo do elemento*/
+            margin:0px; /*espaço entre a borda e os elementos externos*/
+        }
+
+        #meio{
+            width: 100%; /*largura*/
+            height: 80%;; /*altura*/
+        }
+        #lateral{
+            float:right; /*define que o elemento deve flutuar à direita*/
+            padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+            width: 40%; /*largura*/
+            margin-right: 5%;
+        }
+        #conteudo{
+            padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+            width: 50%; /*largura*/
+            float:left; /*define que o elemento deve flutuar à esquerda*/
+            margin-left: 5%;
+            color: black;
+        }
+        aside p {line-height: 30px; font-size:20px; margin-top:15px;}
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" href="Imagens/Logo/fruta.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+<!-- Loader -->
+<div class="loader">
+    <div class="loader-img"></div>
+</div>
+
+<!-- Top menu -->
+<nav style=" background-size: 100%; background-repeat: no-repeat" class="navbar navImage navCor navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+    <div class="container-fluid navCor">
+        <div class="navbar-header navCor">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Menu de Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse escolhaMenu pull-right" id="top-navbar-1">
+            <ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav">
+                <li><a class="scroll-link" href="index.html">Home</a></li>
+                <li><a class="scroll-link" href="#services">Produtos</a></li>
+                <li><a class="scroll-link" href="#portfolio">Sobre</a></li>
+                <li><a class="scroll-link" href="#blog">Eventos</a></li>
+                <li><a class="scroll-link" href="#testimonials">Localização</a></li>
+                <li><a class="scroll-link" href="#news">Noticias</a></li>
+                <li><a class="scroll-link" href="#footer">Contato</a></li>
+            </ul>
+            <!--<div class="navbar-text navbar-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>-->
+        </div>
+    </div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content navMenu">
+
+    <!-- Carrousel -->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div id="carousel-example-generic" class="carousel slide espaço" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="left carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div style="margin-top: 5%; max-height: 1080px" class="carousel-inner" >
+                    <div class="item active">
+                        <img src="Imagens/Banners/banner_premim.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_qualidade.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_saude.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_paulo.png" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIM Carrousel -->
+    <div class="container-fluid" style="background-image: url(Imagens/Menu/basereta.jpg);">
+        <br>
+    </div>
+
+
+</div>
+<img src="Imagens/Menu/base.gif" class="center" style=" object-position: center;">
+<h2>Vantagens de se comprar o Creme de Açaí para comercialização</h2>
+
+<div class="row">
+    <div class="col-sm-12 more-services-box wow fadeInLeft">
+        <section id="meio">
+
+            <article id="conteudo">
+                <p>Um dos melhores períodos para se ganhar dinheiro com alimentos é o verão. E o açaí desponta como um dos produtos mais consumidos neste período.
+                    Por isso, listamos as vantagens de se comprar o creme de açaí já batido para aproveitar este período do verão.</p>
+
+
+                CUSTOS : <br>
+                A POLPA DO AÇAÍ CUSTA EM MÉDIA DE R$ 5,60 A R$ 7,00 Kg <br>
+                GARRAFA DE GUARANÁ EM MÉDIA R$ 12,50<br>
+                +<br>
+                ..FRUTAS USADAS NA MISTURA SEM CONTAR AS QUE ESTRAGAM<br>
+                ..ENERGIA ELÉTRICA<br>
+                ..AGUA (PARA LAVAR OS UTENSILIOS USADOS), E MATERIA DE LIMPEZA<br>
+                ..CUSTO DE TRANSPORTE DA POLPA<br>
+                ..CUSTO DE ESTOQUE DA POLPA<br>
+                ..DIMINUIÇÃO DE VIDA UTIL DE UNIFORMES POR MANCHAS ETC.:<br>
+                ..LUVAS , TOUCAS E MÁSCARAS QUANDO USADOS (DEVERIAM SER)<br>
+                ..PERDAS NA HORA DE QUEBRAR AS PEDRAS EM MÉDIA 05 %<br>
+                O QUE GERA UM CUSTO MÉDIO DE R$ 7,90 O LITRO<br>
+                OUTRAS DIFICULDADES:<br>
+                ..SUJA TODO O LOCAL<br>
+                ..OCASIONALMENTE QUEBRA DE TRITURADORES<br>
+                ..PERDA DE LONGO TEMPO NO PREPARO E DEPOIS LIMPEZA<br>
+                ..GERALMENTE O MODO DE PREPARO NÃO SEGUE NORMAS SANITÁRIAS<br>
+
+
+
+
+            </article>
+
+            <aside id="lateral">
+
+                <p>É claro que para isso, de fato, acontecer, é preciso planejamento, organização e muita pesquisa para entrar com firmeza no mercado e fazer acontecer.
+                    Um exemplo disso é o mercado voltado à alimentação saudável, que tem ganhado espaço nas mídias e também nas escolhas dos consumidores.</p>
+
+                <p>A preocupação com saúde e também com a estética, nos últimos tempos, voltou-se aos produtos naturais, extraindo o máximo dos benefícios e
+                    vantagens que frutas, sementes e plantas oferecem. Assim, essa é uma porta que se abre para pequenos empreendedores que buscam sucesso de vendas e
+                    lucratividade.</p>
+
+                <strong>Mais motivos para empreender com açaí</strong>
+                <p>
+
+                    • Por ser um fruto originalmente brasileiro, seu processo de fabricação mantém todas as suas propriedades, preservando o frescor e a eficiência do produto;<br>
+                    • Em regiões de climas mais quentes, é uma ótima pedida para lanches;<br>
+                    • É um ingrediente versátil, adaptando-se a diversas receitas e possibilitando inovações;<br>
+                    • É escolha certa entre os público fitness de academias.</p>
+
+            </aside>
+
+        </section>
+
+    </div>
+
+
+
+</div>
+
+<!-- Footer -->
+<footer class="footer-container" style="background-color: #3f2161">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 footer-left">
+                <h3>Fale Conosco</h3>
+                <div class="contact-form">
+                    <form role="form" action="assets/contact.php" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-email">Email</label>
+                            <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-subject">Assunto..</label>
+                            <input type="text" name="subject" placeholder="Assunto..." class="contact-subject form-control" id="contact-subject">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-message">Mensagem..</label>
+                            <textarea name="message" placeholder="Mensagem..." class="contact-message form-control" id="contact-message"></textarea>
+                        </div>
+                        <button  type="submit" class="btn"  >Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-1 footer-right">
+                <h3>Siga-nos nas redes sociais</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+
+                </div>
+                <div class="footer-copyright">
+                    &copy; Desenvolvido por: Byous Inc. <br>
+                </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1 footer-right" style="padding-top: 05%; ">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h3 style="color: white;font-family: Arial, Helvetica, sans-serif;">
+                            <img src="Imagens/IconesGeral/telefone2.png" width="20%" height="20%" style="padding-right: 10%">(21) 3371-9214</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-sm-12 footer-bottom" style="background-color: #3f2161">
+                <a class="scroll-link" href="#top-content"><i class="fa fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/retina-1.1.0.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+<script type="text/javascript">
+    $('div.bgParallax').each(function(){
+        var $obj = $(this);
+
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+            var bgpos = '50% '+ yPos + 'px';
+
+            $obj.css('background-position', bgpos );
+
+        });
+    });
+</script>
+
+<!--[if lt IE 10]>
+<script src="assets/js/placeholder.js"></script>
+<![endif]-->
+
+</body>
+
+</html>

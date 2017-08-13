@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lokos por Açaí</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <style type="text/css">
+
+        p {color: black; text-align: justify;}
+        h1 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h2 { font-family: 'Bauhaus 93'; color: #3f2161}
+        h3 {color: #3f2161;}
+        h4 {color: #3f2161; text-align: center;}
+
+        .carousel-indicators .active {
+            background-color: #3f2161;
+        }
+        .corborda li {
+            border: 1px solid #3f2161;
+        }
+
+    </style>
+
+
+
+    <style>
+        .thumbnails {
+            max-width: 40%;
+        }
+
+        .italic { font-style: italic; }
+        .small { font-size: 0.8em; }
+
+        /** LIGHTBOX MARKUP **/
+
+        .lightbox {
+            /** Default lightbox to hidden */
+            display: none;
+
+            /** Position and style */
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            top: 0;
+            left: 0;
+            background: rgba(20, 30, 0, 0.8);
+        }
+
+        .lightbox img {
+            /** Pad the lightbox image */
+            max-width: 90%;
+            max-height: 80%;
+            margin-top: 2%;
+        }
+
+        .lightbox:target {
+            /** Remove default browser outline */
+            outline: none;
+
+            /** Unhide lightbox **/
+            display: block;
+        }
+    </style>
+
+
+
+    <style>
+        * {margin:0; padding: 0;}
+        html, body {height:100%;}
+
+        /** formata elementos que tem backgrounds parallax **/
+
+        .bgParallax {
+
+            color:#FFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            position: relative;
+            min-height: 50%;
+
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Define backgrounds dos divs */
+        #quemsomos {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+        #missao {
+            background-image: url(assets/img/backgrounds/açai.png);
+
+        }
+
+        #teste {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+
+        /** Formata o article que vai o texto **/
+        .bgParallax article {
+            width: 70%;
+            text-align: center;
+            margin:0 auto;
+            padding:20% 0 0;
+        }
+
+        /** formata texto **/
+        article h1 {font-size:40px;}
+        article p {line-height: 30px; font-size:20px; margin-top:15px;}
+        article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+        @media (max-width: 767px) {
+            .page-header, .control-box {
+                text-align: center;
+            }
+        }
+        @media (max-width: 479px) {
+            .caption {
+                word-break: break-all;
+            }
+        }
+        .thumbnails li> .fff .caption {
+            background:#fff !important;
+            padding:10px
+        }
+        .page-header h3 {
+            line-height: 0.88rem;
+            color: #000;
+        }
+
+        ul.thumbnails {
+            margin-bottom: 0px;
+        }
+        li { list-style-type:none;}
+
+        ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+        ::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+        a {
+            -webkit-transition: all 150ms ease;
+            -moz-transition: all 150ms ease;
+            -ms-transition: all 150ms ease;
+            -o-transition: all 150ms ease;
+            transition: all 150ms ease;
+        }
+
+        a:hover {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+            filter: alpha(opacity=50); /* IE7 */
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+    </style>
+
+
+
+    <style type="text/css">
+
+        @media (max-width: 389px){
+            .espaço{margin-top: 15%}
+        }
+        @media (max-width: 1024px) {
+            .navCor{
+                background-color: #3f2161;
+            }
+            .escolhaMenu{
+                margin-left: 30%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .navCor{
+                background-color: transparent;
+            }
+            .navImage{
+                background-image: url('Imagens/Menu/menu_logo.png');
+                padding-bottom: 6%;
+            }
+        }
+    </style>
+    <style type="text/css">
+        *{ /*Formata todos os elementos da página*/
+            padding:0px; /*espaço entre a borda e o conteúdo do elemento*/
+            margin:0px; /*espaço entre a borda e os elementos externos*/
+        }
+
+        #meio{
+            width: 100%; /*largura*/
+            height: 80%;; /*altura*/
+        }
+        #lateral{
+            float:right; /*define que o elemento deve flutuar à direita*/
+            padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+            width: 40%; /*largura*/
+            margin-right: 5%;
+        }
+        #conteudo{
+            padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+            width: 50%; /*largura*/
+            float:left; /*define que o elemento deve flutuar à esquerda*/
+            margin-left: 5%;
+            color: black;
+        }
+        aside p {line-height: 30px; font-size:20px; margin-top:15px;}
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" href="Imagens/Logo/fruta.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+<!-- Loader -->
+<div class="loader">
+    <div class="loader-img"></div>
+</div>
+
+<!-- Top menu -->
+<nav style=" background-size: 100%; background-repeat: no-repeat" class="navbar navImage navCor navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+    <div class="container-fluid navCor">
+        <div class="navbar-header navCor">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="sr-only">Menu de Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse escolhaMenu pull-right" id="top-navbar-1">
+            <ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav">
+                <li><a class="scroll-link" href="index.html">Home</a></li>
+                <li><a class="scroll-link" href="#services">Produtos</a></li>
+                <li><a class="scroll-link" href="#portfolio">Sobre</a></li>
+                <li><a class="scroll-link" href="#blog">Eventos</a></li>
+                <li><a class="scroll-link" href="#testimonials">Localização</a></li>
+                <li><a class="scroll-link" href="#news">Noticias</a></li>
+                <li><a class="scroll-link" href="#footer">Contato</a></li>
+            </ul>
+            <!--<div class="navbar-text navbar-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>-->
+        </div>
+    </div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content navMenu">
+
+    <!-- Carrousel -->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div id="carousel-example-generic" class="carousel slide espaço" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="left carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div style="margin-top: 5%; max-height: 1080px" class="carousel-inner" >
+                    <div class="item active">
+                        <img src="Imagens/Banners/banner_premim.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_qualidade.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_saude.png" alt="...">
+                    </div>
+
+                    <div class="item">
+                        <img src="Imagens/Banners/banner_paulo.png" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIM Carrousel -->
+    <div class="container-fluid" style="background-image: url(Imagens/Menu/basereta.jpg);">
+        <br>
+    </div>
+
+
+</div>
+<img src="Imagens/Menu/base.gif" class="center" style=" object-position: center;">
+         <h2>Estudo da Embrapa mostra composição química do açaí</h2>
+
+<div class="row">
+    <div class="col-sm-12 more-services-box wow fadeInLeft">
+        <section id="meio">
+
+            <article id="conteudo">
+                <p>O açaí é considerado alimento de alto valor calórico, com elevado percentual de lipídeos, e nutricional, pois é rico em proteínas e minerais.
+                    Nas áreas de exploração extrativa, o açaí representa a principal base alimentar da população, notadamente dos ribeirinhos da região do estuário do Rio Amazonas.</p>
+                <p>O óleo extraído do açaí é composto de ácidos graxos de boa qualidade, com 60% de monoinsaturados e 13% de poliinsaturados. Com relação às proteínas,
+                    possui teor superior ao do leite (3,50%) e do ovo (12,49%), enquanto o perfil em aminoácidos é semelhante ao do ovo.</p>
+
+                <p>O açaí possui elevado teor de antocianinas, contendo cerca de 1,02 /100 g de extrato seco. As antocianinas são pigmentos naturais, pertencentes à família dos flavonóides,
+                sendo estes responsáveis pela cor do açaí. Além disto, possuem função antioxidante, que assegura melhor circulação sanguínea e protegem o organismo contra o acúmulo de
+                    placas de depósito de lipídeos, causadores da arteriosclerose.</p>
+
+                <p>O consumo diário de um litro de açaí do tipo médio, com 12,5% de matéria seca, contém 65,8 g de lipídios, o que corresponde a 66% da ingestão diária requerida;
+                    31,5 g
+                    de fibras alimentares totais, o que equivale a 90% das recomendações diárias e 12,6 g de proteínas, o que corresponde de 25% a 30% da quantidade nutricional
+                    diária necessária.</p>
+                <p> O açaí é rico em minerais, principalmente potássio e cálcio e, dentre as vitaminas, pode ser destacada a vitamina E, um antioxidante natural que atua na
+                    eliminação
+                    dos radicais livres.</p>
+
+
+                <strong style="color: #bd16ff">Clima</strong>
+
+                <p>O estuário amazônico, pela sua posição geográfica, baixa latitude e clima quente, é considerado como região tipicamente tropical. As temperaturas médias anuais
+                    oscilam entre 22 oC e 27 oC, com as máximas variando de 28 oC a 33 oC e as mínimas de 17 oC a 23 oC.</p>
+                <p>O total de brilho solar anual é de 1.400 a 2.500 horas que,
+                    com a alta nebulosidade, os períodos de insolação correspondem de 35% a 60% do total de horas. A umidade relativa do ar varia entre 70% e 91%, e está estreitamente
+                    relacionada aos períodos pluviométricos. A região se beneficia com índices pluviométricos de 1.300 a 3.000 mm anuais, distribuídos em 2 períodos, o mais chuvoso e o
+                    menos chuvoso (Bastos, 1972; Bastos et al. 1986).</p>
+
+                <p> De acordo com a classificação de Köppen, a Região Amazônica está situada no grupo de clima tropical chuvoso A, onde as temperaturas médias dos meses não são inferiores a
+                    18 oC, com oscilações inferiores a 5 oC, exceto a cidade de Cárceres, MT, que apresenta amplitude anual um pouco acima desse limite. Segundo Bastos (1972), a variedade
+                    climática i se caracteriza por não ter verão ou inverno estacional. Os tipos climáticos, Afi, Ami e Awi se diferenciam a partir do total pluviométrico do mês com menor
+                    precipitação em relação ao total anual.</p>
+
+                <p>A definição das possibilidades ou limitações do cultivo do açaizeiro, em áreas da Região Amazônica, exige o conhecimento da disponibilidade de água no solo, de acordo com
+                    o balanço hídrico que se baseia, além da precipitação pluviométrica, nas perdas de água pelo processo de evapotranspiração. O açaizeiro encontra condições satisfatórias
+                    de cultivo nas faixas climáticas com regular distribuição de chuvas e em áreas que, mesmo com período seco definido, disponham de umidade satisfatória no solo, como nas
+                    várzeas.</p>
+
+                <p>O tipo Afi apresenta abundância de chuvas durante todo o ano (acima de 2.500 mm anuais) e, no mês de menor precipitação, as chuvas alcançam mais de
+                60 mm, condições adequadas para o cultivo do açaizeiro. O Ami, intermediário entre Afi e Awi, possui regime pluviométrico anual que define uma estação
+                relativamente seca, mas com precipitação total acima de 2.500 mm anuais. O tipo climático Awi se caracteriza por ter índice pluviométrico anual entre
+                    1.000 e 2.500 mm, com nítida estação seca.</p>
+                <p>Quando cultivado em áreas de terra firme, com tipo climático Ami e Awi, com vistas a evitar a redução ou
+                paralisação do crescimento, floração e frutificação do açaizeiro, é importante planejar, nos períodos menos chuvosos, a utilização de sistema de
+                    irrigação, que garanta a suplementação hídrica às plantas (Bastos, 1972; Calzavara, 1972).</p>
+
+
+                <div class="col-sm-12 more-services-box wow fadeInLeft">
+
+                    <table border="0" cellspacing="0" cellpadding="0" style="color: #000000; font-family: 'Times New Roman'; font-size: medium; text-align: start; width: 480px; margin-left: 5%">
+                        <tbody>
+                        <tr>
+                            <td width="397"><span style="color: #003399; font-family: Arial, Helvetica, sans-serif; font-size: small;"><strong>Tabela 1.</strong>&nbsp;Composição química e valor nutricional do açaí.</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellpadding="3" style="width: 100%;">
+                                    <tbody>
+                                    <tr>
+                                        <td width="32%" valign="top" bgcolor="#003399">
+                                            <p style="font-size: small; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><strong>Composição</strong></p>
+                                        </td>
+                                        <td width="28%" valign="top" bgcolor="#003399">
+                                            <p style="font-size: small; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><strong>Unidade</strong></p>
+                                        </td>
+                                        <td width="40%" valign="top" bgcolor="#003399">
+                                            <p style="font-size: small; color: #ffffff; font-family: Arial, Helvetica, sans-serif;"><strong>Quantidade na matéria seca</strong></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="32%" height="440" valign="top" bgcolor="#B0D0FF">
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">pH</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Matéria seca</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Proteínas</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Lipídios totais</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Açúcares totais</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Açúcares redutores</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Frutose</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Glicose</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Sacarose</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Fibras Brutas</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Energia</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Cinzas</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Sódio</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Potássio</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Cálcio</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Magnésio</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Ferro</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Cobre</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Zinco</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Fósforo</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Vitamina B1</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">α-Tocoferol (vitamina E)</p>
+                                        </td>
+                                        <td width="28%" height="440" valign="top" bgcolor="#B0D0FF">
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">-</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">%</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">Kcal/100g</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">g/100 g(1)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">mg/100 g(2)</p>
+                                        </td>
+                                        <td width="40%" height="440" valign="top" bgcolor="#B0D0FF">
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">5,80</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">15,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">13,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">48,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">1,50</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">1,50</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">0,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">1,50</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">0,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">34,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">66,30</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">3,50</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">56,40</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">932,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">286,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">174,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">1,50</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">1,70</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">7,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">124,00</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">0,25</p>
+                                            <p style="font-size: small; font-family: Arial, Helvetica, sans-serif;">45,00</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: #003399; font-family: Arial, Helvetica, sans-serif; font-size: small;">(1)Matéria seca; (2)Cálculo por diferença.<br />Fonte: Rogez (2000).</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </article>
+
+            <aside id="lateral">
+
+
+                <strong>Solos</strong>
+
+                <p>Os solos são originados da decomposição de rochas superficiais e resultam de processos destrutivos, relacionados com a decomposição e desintegração
+                (física e química) dos minerais e de restos orgânicos (vegetais e animais); e construtivos, com a formação de novos corpos químicos, orgânicos e inorgânicos.
+                Desse modo, os solos apresentam textura, estrutura e composição química que irão influir no desenvolvimento das plantas, pois neles se fixam e extraem parte
+                    dos elementos necessários à sua sobrevivência e desenvolvimento (Falesi, 1972).</p>
+
+                <p>Na Amazônia brasileira predominam, pela superfície que ocupam, dois padrões de solos: os de terra firme (87%), com pH variando de 4,5 a 6,5 e, normalmente,
+                    pobres em cálcio; e os de várzea (13%), situados às margens dos rios com influência constante das marés (Nascimento & Homma, 1984).</p>
+                <p>Os solos de terra firme,
+                    embora o açaizeiro seja espécie típica de áreas inundáveis, são opções importantes para o cultivo dessa palmácea, mas sob condições com baixa deficiência hídrica.</p>
+
+                <strong>Solos de terra firme</strong>
+
+                <p>Os solos latossólicos, que ocorrem nas áreas não-inundáveis do estuário amazônico, são bem drenados, porosos, fortemente ácidos e de baixa fertilidade.
+                Dentre esses, a unidade pedogenética de maior importância é constituída pelos Latossolos Amarelo, Vermelho-amarelo e Vermelho-escuro (Latossolo Vermelho),
+                que são solos profundos, fortemente desgastados, bem drenados, com textura variando de leve (arenosa) a muito pesada (argilosa).
+                    </p>
+                <p>Apesar da baixa fertilidade natural, baixa soma de bases, baixa capacidade de troca de cátions e baixo índice de saturação, respondem muito bem à adubação, o que faz com que os atributos
+                    físicos desses solos sejam mais importantes do que os químicos (Falesi, 1972).</p>
+
+                <p>Na implantação de açaizais em solos de terra firme, em sistemas de cultivo solteiro e consorciado, é recomendável a utilização de áreas exploradas com
+                    plantios sucessivos. As áreas de pastagens degradadas ou as capoeiras finas (macegas) permitem menores custos de implantação do açaizal.</p>
+
+                <p>As áreas desmatadas para uso agrícola, no Estado do Pará, ultrapassam os
+
+                200.000 km2, muitas das quais são passíveis de serem utilizadas com sistemas produtivos, tais como os de açaizeiro. Por ser espécie florestal típica da região,
+                com características de cultura permanente, é indicado para as condições tropicais de grande precipitação pluviométrica e elevada temperatura, onde exerce proteção
+                permanente do solo.
+                A grande intensidade e freqüência de chuvas ocorrentes na região podem causar a desagregação das partículas dos solos provocando a sua erosão. Por isso, é dada
+                    preferência aos solos planos e com baixa declividade, bem como utilizar coberturas viva ou morta nas áreas de plantio.</p>
+
+                <p>Os solos concrecionários não são recomendáveis para o cultivo do açaizeiro, pois são obstáculos à penetração das raízes superficiais dessa espécie e concorrem
+                    para a redução do número de brotações, crescimento lento dos estipes e redução do diâmetro, com reflexos na produção (Calzavara, 1972).</p>
+
+
+                <strong>Solos de várzea e igapó</strong>
+
+                <p>Esses solos hidromórficos ocupam áreas planas, baixas, de formação sedimentar recente, que margeiam os rios e apresentam extensões de alguns quilômetros de largura.
+                    Essas áreas, ao longo do Rio Amazonas e seus afluentes, são distinguidas em várzea alta, várzea baixa e igapó (Falesi, 1972).</p>
+
+                <p>Os principais solos hidromórficos encontrados na Região Amazônica, segundo Falesi (1986) são:</p>
+
+                <p>- Plintossolos ou Lateritas Hidromórficas: normalmente de baixa fertilidade;</p>
+
+                <p>- Gleissolos háplicos, Gley Pouco Húmico ou Gley Húmico: resultante do acúmulo de sedimentos e, por isso, tem fertilidade de média a alta.
+                Esses devem ser os preferidos quando da aplicação do manejo de açaizais ou enriquecimento de ecotipos produtivos dessa palmácea,
+                    ou com outras espécies de área inundável, que tenham valor econômico;</p>
+
+                <p>- Espodossolos ou Podzol Hidromórfico: são de baixa fertilidade e excessivamente ácidos.</p>
+
+                <p>O regime de inundações periódicas nas áreas de várzea provocou a adaptação de algumas espécies vegetais, como o açaizeiro que desenvolveu mecanismos de
+                adaptações morfológica e anatômica, representadas por raízes aéreas com lenticelas e aerênquimas. As estratégias fisiológicas desenvolvidas pelas plantas
+                desta palmácea, permitem manter as sementes viáveis e as plântulas vivas, por períodos superiores a 15 dias, em ambiente anóxico da várzea baixa.
+                A redução do teor de oxigênio em solo de igapó, explica a menor freqüência de espécies arbóreas e de açaizeiro, pois a germinação de sementes é limitada
+                    e o crescimento das plântulas é prejudicado. Quando o suprimento de oxigênio é normalizado, as sementes germinam e as plântulas retomam o seu desenvolvimento.</p>
+
+                <p>Os solos de várzea não apresentam boas propriedades físicas, mas têm elevada fertilidade, por causa das sucessivas deposições de sedimentos,
+                e pH de 4,5 a 5,5. As oscilações do lençol freático determinam a maior ou menor disponibilidade de água e oxigênio, provocando os processos de
+                    oxidação e redução do ferro, responsáveis pelo aparecimento de mosqueados, que caracterizam esses solos de terras inundáveis.</p>
+
+                <p>Em condições naturais, a densidade de açaizeiro nas populações nativas é maior nos solos de várzea alta, seguida das de várzea baixa. Nos igapós,
+                as populações de açaizeiro são menos densas, havendo também considerável redução no número de perfilhos. Por isso, devem ser priorizados a implantação
+                de cultivos racionais e o manejo de populações nativas nas áreas de várzeas, sem excluir as de igapó, que requerem práticas de manejos específicas e maior
+                    volume de investimento.</p>
+
+                Fonte: Embrapa
+            </aside>
+
+        </section>
+
+    </div>
+
+
+
+</div>
+
+<!-- Footer -->
+<footer class="footer-container" style="background-color: #3f2161">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 footer-left">
+                <h3>Fale Conosco</h3>
+                <div class="contact-form">
+                    <form role="form" action="assets/contact.php" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-email">Email</label>
+                            <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-subject">Assunto..</label>
+                            <input type="text" name="subject" placeholder="Assunto..." class="contact-subject form-control" id="contact-subject">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-message">Mensagem..</label>
+                            <textarea name="message" placeholder="Mensagem..." class="contact-message form-control" id="contact-message"></textarea>
+                        </div>
+                        <button  type="submit" class="btn"  >Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-1 footer-right">
+                <h3>Siga-nos nas redes sociais</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+
+                </div>
+                <div class="footer-copyright">
+                    &copy; Desenvolvido por: Byous Inc. <br>
+                </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1 footer-right" style="padding-top: 05%; ">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h3 style="color: white;font-family: Arial, Helvetica, sans-serif;">
+                            <img src="Imagens/IconesGeral/telefone2.png" width="20%" height="20%" style="padding-right: 10%">(21) 3371-9214</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-sm-12 footer-bottom" style="background-color: #3f2161">
+                <a class="scroll-link" href="#top-content"><i class="fa fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/retina-1.1.0.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+<script type="text/javascript">
+    $('div.bgParallax').each(function(){
+        var $obj = $(this);
+
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+            var bgpos = '50% '+ yPos + 'px';
+
+            $obj.css('background-position', bgpos );
+
+        });
+    });
+</script>
+
+<!--[if lt IE 10]>
+<script src="assets/js/placeholder.js"></script>
+<![endif]-->
+
+</body>
+
+</html>
