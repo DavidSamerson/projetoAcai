@@ -125,6 +125,19 @@
 		}
 	</style>
 
+	<script type="text/javascript">
+	$(function() {
+		$('a[href="#news"]').click(
+			function(e){
+				e.preventDefault();
+				var targetOffset = $('div[id="news"]').offset().top;
+				$('body').animate(
+					{scrollTop: targetOffset}, 1000);
+
+			});
+	})
+    </script>
+
 
 
 	<style type="text/css">
@@ -558,7 +571,7 @@
 
 			<!-- Começo do carousel de 4 para EVENTOS ---------------------------------------- -->
 
-			<div id="carousel-example-generic3" class="carousel slide col-xs-10 col-md-10 col-md-offset-1 col-xs-offset-1" data-ride="carousel" >
+			<div id="carousel-example-generic3" class="carousel tamanhocarousel slide col-xs-10 col-md-10 col-md-offset-1 col-xs-offset-1" data-ride="carousel" >
 				<!-- Indicators -->
 				<ol class="carousel-indicators corborda">
 					<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
@@ -567,9 +580,9 @@
 				</ol>
 
 				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+				<div class="carousel-inner " role="listbox">
 
-					<div class="item active">
+					<div class="item active ">
 						<div class="row" >
 							<div class="col-md-3 col-xs-6" style="">
 								
