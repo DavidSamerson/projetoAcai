@@ -3,112 +3,160 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lokos por Açaí</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lokos por Açaí</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/form-elements.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/media-queries.css">
-	<style type="text/css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <style type="text/css">
+        p {
+            color: black;
+            text-align: justify;
+        }
+        
+        h1 {
+            font-family: 'Bauhaus 93';
+            color: #3f2161
+        }
+        
+        h2 {
+            font-family: 'Bauhaus 93';
+            color: #3f2161
+        }
+        
+        h3 {
+            color: #3f2161;
+        }
+        
+        h4 {
+            color: #3f2161;
+            text-align: center;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #3f2161;
+        }
+        
+        .corborda li {
+            border: 1px solid #3f2161;
+        }
 
-		p {color: black; text-align: justify;}
-		h1 { font-family: 'Bauhaus 93'; color: #3f2161}
-		h2 { font-family: 'Bauhaus 93'; color: #3f2161}
-		h3 {color: #3f2161;}
-		h4 {color: #3f2161; text-align: center;}
+    </style>
 
-		.carousel-indicators .active {
-			background-color: #3f2161;
-		}
-		.corborda li {
-			border: 1px solid #3f2161;
-		}
-
-	</style>
-
-	<style>
-		* {margin:0; padding: 0;}
-
-		html, body {height:100%;}
-
-		/** formata elementos que tem backgrounds parallax **/
-
-		.bgParallax {
-
-			color:#FFF;
-			margin: 0 auto;
-			width: 100%;
-			max-width: 1920px;
-			position: relative;
-			min-height: 50%;
-
-			background-position: 50% 0;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-
-		/* Define backgrounds dos divs */
-		#quemsomos {
-			background-image: url(assets/img/backgrounds/fundo-branco.png);
-			min-height: 10%;
-		}
-		#missao {
-			background-image: url(assets/img/backgrounds/açai.png);
-
-		}
-
-		#teste {
-			background-image: url(assets/img/backgrounds/fundo-branco.png);
-			min-height: 10%;
-		}
-
-		/** Formata o article que vai o texto **/
-		.bgParallax article {
-			width: 70%;
-			text-align: center;
-			margin:0 auto;
-			padding:20% 0 0;
-		}
-
-		/** formata texto **/
-		article h1 {font-size:40px;}
-		article p {line-height: 30px; font-size:20px; margin-top:15px;}
-		article p a {color:#FFF; text-decoration:none; font-size:30px;}
-
-		@media (max-width: 767px) {
-			.page-header, .control-box {
-				text-align: center;
-			}
-		}
-		@media (max-width: 479px) {
-			.caption {
-				word-break: break-all;
-			}
-		}
-		.thumbnails li> .fff .caption {
-			background:#fff !important;
-			padding:10px
-		}
-		.page-header h3 {
-			line-height: 0.88rem;
-			color: #000;
-		}
-
-		ul.thumbnails {
-			margin-bottom: 0px;
-		}
-		li { list-style-type:none;}
-
-		::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
-		::-moz-selection { background: #ff5e99; color: #FFFFFF; }
-/*
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        /** formata elementos que tem backgrounds parallax **/
+        
+        .bgParallax {
+            color: #FFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            position: relative;
+            min-height: 50%;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* Define backgrounds dos divs */
+        
+        #quemsomos {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+        
+        #missao {
+            background-image: url(assets/img/backgrounds/açai.png);
+        }
+        
+        #teste {
+            background-image: url(assets/img/backgrounds/fundo-branco.png);
+            min-height: 10%;
+        }
+        /** Formata o article que vai o texto **/
+        
+        .bgParallax article {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20% 0 0;
+        }
+        /** formata texto **/
+        
+        article h1 {
+            font-size: 40px;
+        }
+        
+        article p {
+            line-height: 30px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        
+        article p a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        
+        @media (max-width: 767px) {
+            .page-header,
+            .control-box {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 479px) {
+            .caption {
+                word-break: break-all;
+            }
+        }
+        
+        .thumbnails li>.fff .caption {
+            background: #fff !important;
+            padding: 10px
+        }
+        
+        .page-header h3 {
+            line-height: 0.88rem;
+            color: #000;
+        }
+        
+        ul.thumbnails {
+            margin-bottom: 0px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        ::selection {
+            background: #ff5e99;
+            color: #FFFFFF;
+            text-shadow: 0;
+        }
+        
+        ::-moz-selection {
+            background: #ff5e99;
+            color: #FFFFFF;
+        }
+        /*
 		a {
 			-webkit-transition: all 150ms ease;
 			-moz-transition: all 150ms ease;
@@ -116,411 +164,432 @@
 			-o-transition: all 150ms ease;
 			transition: all 150ms ease;
 		}*/
+        
+        a:hover {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            /* IE 8 */
+            filter: alpha(opacity=50);
+            /* IE7 */
+            opacity: 0.6;
+            text-decoration: none;
+        }
 
-		a:hover {
-			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
-			filter: alpha(opacity=50); /* IE7 */
-			opacity: 0.6;
-			text-decoration: none;
-		}
-	</style>
+    </style>
 
-	<script type="text/javascript">
-	$(function() {
-		$('a[href="#news"]').click(
-			function(e){
-				e.preventDefault();
-				var targetOffset = $('div[id="news"]').offset().top;
-				$('body').animate(
-					{scrollTop: targetOffset}, 1000);
+    <script type="text/javascript">
+        $(function() {
+            $('a[href="#news"]').click(
+                function(e) {
+                    e.preventDefault();
+                    var targetOffset = $('div[id="news"]').offset().top;
+                    $('body').animate({
+                        scrollTop: targetOffset
+                    }, 1000);
 
-			});
-	})
+                });
+        })
+
     </script>
 
 
 
-	<style type="text/css">
+    <style type="text/css">
+        @media (max-width: 389px) {
+            .espaço {
+                margin-top: 15%
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .navCor {
+                background-color: #3f2161;
+            }
+            .escolhaMenu {
+                margin-left: 30%;
+            }
+        }
+        
+        @media (min-width: 1025px) {
+            .navCor {
+                background-color: transparent;
+            }
+            .navImage {
+                background-image: url('Imagens/Menu/menu_logo.png');
+                padding-bottom: 6%;
+            }
+        }
 
-		@media (max-width: 389px){
-			.espaço{margin-top: 15%}
-		}
-		@media (max-width: 1024px) {
-			.navCor{
-				background-color: #3f2161;
-			}
-			.escolhaMenu{
-				margin-left: 30%;
-			}
-		}
-		@media (min-width: 1025px) {
-			.navCor{
-				background-color: transparent;
-			}
-			.navImage{
-				background-image: url('Imagens/Menu/menu_logo.png');
-				padding-bottom: 6%;
-			}
-		}
-	</style>
+    </style>
 
 
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<!-- Favicon and touch icons -->
-	<link rel="icon" type="image/png" href="Imagens/Logo/fruta.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.css">
-	<script src="lightbox2-master/dist/js/lightbox.js"></script>
-	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
-	<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
-	<script>
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" href="Imagens/Logo/fruta.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.css">
+    <script src="lightbox2-master/dist/js/lightbox.js"></script>
+    <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
+    <script>
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true
         })
-	</script>
+
+    </script>
 </head>
 
 <body>
 
-<!-- Loader -->
-<div class="loader">
-	<div class="loader-img"></div>
-</div>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-img"></div>
+    </div>
 
-<!-- Top menu -->
-<nav style=" background-size: 100%; background-repeat: no-repeat" class="navbar navImage navCor navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
-	<div class="container-fluid navCor">
-		<div class="navbar-header navCor">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+    <!-- Top menu -->
+    <nav style=" background-size: 100%; background-repeat: no-repeat" class="navbar navImage navCor navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container-fluid navCor">
+            <div class="navbar-header navCor">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
 				<span class="sr-only">Menu de Navegação</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-		</div>
+            </div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse escolhaMenu pull-right collapse navbar-collapse" id="top-navbar-1">
-			<ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav navbar-right">
-				<li><a class="scroll-link" href="#top-content">Home</a></li>
-				<li><a class="scroll-link" href="#services">Produtos</a></li>
-				<li><a class="scroll-link" href="#portfolio">Sobre</a></li>
-				<li><a class="scroll-link" href="#blog">Eventos</a></li>
-				<li><a class="scroll-link" href="#testimonials">Localização</a></li>
-				<li><a href="#news" name="news">Noticias</a></li>
-				<li><a class="scroll-link" href="#footer">Contato</a></li>
-			</ul>
-			<!--<div class="navbar-text navbar-right">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse escolhaMenu pull-right collapse navbar-collapse" id="top-navbar-1">
+                <ul style="font-family: 'Bauhaus 93'; font-size: 110%; color: #2aabd2" class="nav navbar-nav navbar-right">
+                    <li><a class="scroll-link" href="#top-content">Home</a></li>
+                    <li><a class="scroll-link" href="#services">Produtos</a></li>
+                    <li><a class="scroll-link" href="#portfolio">Sobre</a></li>
+                    <li><a class="scroll-link" href="#blog">Eventos</a></li>
+                    <li><a class="scroll-link" href="#testimonials">Localização</a></li>
+                    <li><a href="#news" name="news">Noticias</a></li>
+                    <li><a class="scroll-link" href="#footer">Contato</a></li>
+                </ul>
+                <!--<div class="navbar-text navbar-right">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-dribbble"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-pinterest"></i></a>
             </div>-->
-		</div>
-	</div>
-</nav>
+            </div>
+        </div>
+    </nav>
 
-<!-- Top content -->
-<div class="top-content navMenu">
+    <!-- Top content -->
+    <div class="top-content navMenu">
 
-	<!-- Carrousel -->
+        <!-- Carrousel -->
 
-	<div class="container-fluid">
-		<div class="row">
+        <div class="container-fluid">
+            <div class="row">
 
-			<div id="carousel-example-generic" class="carousel slide espaço" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide espaço" data-ride="carousel">
 
-				<!-- Indicators -->
-				<ol class="left carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				</ol>
+                    <!-- Indicators -->
+                    <ol class="left carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
 
-				<!-- Wrapper for slides -->
-				<div style="margin-top: 5%; max-height: 1080px" class="carousel-inner" >
-					<div class="item active">
-						<img src="Imagens/Banners/banner_premim.png" alt="...">
-					</div>
+                    <!-- Wrapper for slides -->
+                    <div style="margin-top: 5%; max-height: 1080px" class="carousel-inner">
+                        <div class="item active">
+                            <img src="Imagens/Banners/banner_premim.png" alt="...">
+                        </div>
 
-					<div class="item">
-						<img src="Imagens/Banners/banner_qualidade.png" alt="...">
-					</div>
+                        <div class="item">
+                            <img src="Imagens/Banners/banner_qualidade.png" alt="...">
+                        </div>
 
-					<div class="item">
-						<img src="Imagens/Banners/banner_saude.png" alt="...">
-					</div>
+                        <div class="item">
+                            <img src="Imagens/Banners/banner_saude.png" alt="...">
+                        </div>
 
-					<div class="item">
-						<img src="Imagens/Banners/banner_paulo.png" alt="...">
-					</div>
-				</div>
+                        <div class="item">
+                            <img src="Imagens/Banners/banner_paulo.png" alt="...">
+                        </div>
+                    </div>
 
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
 
-				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
 
-			</div>
-		</div>
+                </div>
+            </div>
 
-	</div>
-	<!-- FIM Carrousel -->
-	<div class="container-fluid" style="background-image: url(Imagens/Menu/basereta.jpg);">
-		<br>
-	</div>
-
-
-</div>
-<img src="Imagens/Menu/base.gif" class="center" style=" object-position: center;">
+        </div>
+        <!-- FIM Carrousel -->
+        <div class="container-fluid" style="background-image: url(Imagens/Menu/basereta.jpg);">
+            <br>
+        </div>
 
 
-<!-- PRODUTOS --------------------------------------------------------------------------------------------------------------------- -->
-
-<div class="services-container section-container">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12 services section-description wow fadeIn">
-				<h2>Produtos</h2>
-				<div class="divider-1 wow fadeInUp"><span></span></div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Great support -->
-<div class="great-support-container section-container ">
-	<!-- INICIO DO CAROUSEL DE 4---------------------------------------------------->
-
-	<div class="row">
-		<div class="row">
-			<div class="col-md-12 col-xs-12">
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-xs-12">
-
-							<div  class="col-md-2 col-md-offset-1 col-xs-4"><img src="Imagens/caixa-10l.png"></div>
-							<div  class="col-md-2 col-md-offset-2 col-xs-4"><img src="Imagens/caixa-5l.png"></div>
-							<div  class="col-md-2 col-md-offset-2 col-xs-4"><img src="Imagens/pote-2l.png"></div>
-
-						</div>
-
-						<div class="col-md-12">
-
-							<div  class="col-md-2 col-md-offset-1 col-xs-4"> <h3>Caixa Com 10 Litros</h3><h4>O melhor açaí do Rio! Caixas especiais de 10 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4></div>
-							<div  class="col-md-2 col-md-offset-2 col-xs-4"> <h3>Caixa Com 5 Litros</h3><h4>O melhor açaí do Rio! Açaí especial em caixa de 5 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4></div>
-							<div  class="col-md-2 col-md-offset-2 col-xs-4"> <h3>Pote Com 2 Litros</h3><h4>Agora você pode levar pra casa todo o sabor da Lokos por Açaí em potes de 2 litros! É a Lokos por açaí tamanho família!</h4></div>
-
-						</div>
-					</div>
-				</div>
-				<br>
-				<br>
-
-				<div id="Carousel" class="carousel slide">
+    </div>
+    <img src="Imagens/Menu/base.gif" class="center" style=" object-position: center;">
 
 
+    <!-- PRODUTOS --------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="services-container section-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 services section-description wow fadeIn">
+                    <h2>Produtos</h2>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Great support -->
+    <div class="great-support-container section-container ">
+        <!-- INICIO DO CAROUSEL DE 4---------------------------------------------------->
+
+        <div class="row">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+
+                                <div class="col-md-2 col-md-offset-1 col-xs-4"><img src="Imagens/caixa-10l.png"></div>
+                                <div class="col-md-2 col-md-offset-2 col-xs-4"><img src="Imagens/caixa-5l.png"></div>
+                                <div class="col-md-2 col-md-offset-2 col-xs-4"><img src="Imagens/pote-2l.png"></div>
+
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <div class="col-md-2 col-md-offset-1 col-xs-4">
+                                    <h3>Caixa Com 10 Litros</h3>
+                                    <h4>O melhor açaí do Rio! Caixas especiais de 10 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4>
+                                </div>
+                                <div class="col-md-2 col-md-offset-2 col-xs-4">
+                                    <h3>Caixa Com 5 Litros</h3>
+                                    <h4>O melhor açaí do Rio! Açaí especial em caixa de 5 litros pronto para revenda! Não perca mais tempo e dinheiro quebrando pedras de açaí! Compre e começe a vender já!</h4>
+                                </div>
+                                <div class="col-md-2 col-md-offset-2 col-xs-4">
+                                    <h3>Pote Com 2 Litros</h3>
+                                    <h4>Agora você pode levar pra casa todo o sabor da Lokos por Açaí em potes de 2 litros! É a Lokos por açaí tamanho família!</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div id="Carousel" class="carousel slide">
 
 
 
-					<!-- Carousel items SABORES -->
-					<div class="carousel-inner">
+
+
+                        <!-- Carousel items SABORES -->
+                        <div class="carousel-inner">
 
 
 
-					</div><!--.carousel-inner-->
+                        </div>
+                        <!--.carousel-inner-->
 
-				</div><!--.Carousel-->
+                    </div>
+                    <!--.Carousel-->
 
-			</div>
-		</div>
-	</div><!--.container fim do carousel-->
-</div>
+                </div>
+            </div>
+        </div>
+        <!--.container fim do carousel-->
+    </div>
 
-<!-- SOBRE A EMPRESA -->
-<div id="about"  class="bgParallax section-container portfolio-container">
-	<div class="container">
+    <!-- SOBRE A EMPRESA -->
+    <div id="about" class="bgParallax section-container portfolio-container">
+        <div class="container">
 
-		<div class="row">
-			<div class="col-sm-12 portfolio section-description wow fadeIn">
-				<h2 >Sobre nossa empresa</h2>
-				<div class="divider-1 wow fadeInUp"><span></span></div>
-			</div>
-		</div>
+            <div class="row">
+                <div class="col-sm-12 portfolio section-description wow fadeIn">
+                    <h2>Sobre nossa empresa</h2>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+            </div>
 
-		<div class="row">
-			<div class="col-sm-12 more-services-box wow fadeInLeft">
-				<p style="text-align: center; ">Empresa com sede no Rio de Janeiro Capital e em expansão para todo o Brasil.
-					Atualmente em nossa linha de produção contamos com o Açaí pronto para consumo   (principal produto da marca).
-					Produtos produzidos a partir de frutas selecionadas com certificado de análise microbiótica. Fórmula exclusiva e um complexo sistema de produção, garantindo total qualidade em produtos envasados. Mantemos conservação em câmara fria, embalagens esterilizadas e térmicas.</p></div>
-		</div>
+            <div class="row">
+                <div class="col-sm-12 more-services-box wow fadeInLeft">
+                    <p style="text-align: center; ">Empresa com sede no Rio de Janeiro Capital e em expansão para todo o Brasil. Atualmente em nossa linha de produção contamos com o Açaí pronto para consumo (principal produto da marca). Produtos produzidos a partir de frutas selecionadas com certificado de análise microbiótica. Fórmula exclusiva e um complexo sistema de produção, garantindo total qualidade em produtos envasados. Mantemos conservação em câmara fria, embalagens esterilizadas e térmicas.</p>
+                </div>
+            </div>
 
-		<div class="row">
-			<div class="col-sm-6 more-services-box wow fadeInLeft" >
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/morango.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Sabores</h3>
-						<p>
+            <div class="row">
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/morango.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Sabores</h3>
+                            <p>
 
-							Somos a única fábrica no Brasil a preparar creme de açaí com mais de 40 sabores diferentes. Conheça todos os sabores disponíveis aqui.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft" >
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/fabrica.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Empresa</h3>
-						<p>
-							Conheça nossa fábrica e veja todas as vantagens de se comprar o açaí já batido.Certeza de lucro com o mínimo de trabalho para sua loja.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft" >
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/distribuicao.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Distribuição</h3>
-						<p>
-							A empresa dispõe de um sistema de distribuição adequado à sua demanda e conta com veículos próprios para efetuar entregas com segurança e agilidade dentro da sua área de atuação. Inclusive com o exclusivo serviço de entregas expressas atraves de motoboys, agilizando as entregas emergenciais.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft" >
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/visao.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Nossa Visão</h3>
-						<p>
-							Visamos o consumo crescente de Frutas Exóticas a nível mundial, que no passado teve seu início com desportistas e hoje passa a ser consumido também por pessoas preocupadas com a saúde, e que procuram uma alimentação saudável e energética.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+                                Somos a única fábrica no Brasil a preparar creme de açaí com mais de 40 sabores diferentes. Conheça todos os sabores disponíveis aqui.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/fabrica.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Empresa</h3>
+                            <p>
+                                Conheça nossa fábrica e veja todas as vantagens de se comprar o açaí já batido.Certeza de lucro com o mínimo de trabalho para sua loja.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/distribuicao.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Distribuição</h3>
+                            <p>
+                                A empresa dispõe de um sistema de distribuição adequado à sua demanda e conta com veículos próprios para efetuar entregas com segurança e agilidade dentro da sua área de atuação. Inclusive com o exclusivo serviço de entregas expressas atraves de motoboys, agilizando as entregas emergenciais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/visao.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Nossa Visão</h3>
+                            <p>
+                                Visamos o consumo crescente de Frutas Exóticas a nível mundial, que no passado teve seu início com desportistas e hoje passa a ser consumido também por pessoas preocupadas com a saúde, e que procuram uma alimentação saudável e energética.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row">
-			<div class="col-sm-6 more-services-box wow fadeInLeft">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/gmail.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Cadastre-se</h3>
-						<p>
-							Cadastre-se e receba todas as novidades, dicas e informações sobre o açaí.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft" >
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/diferencial.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Diferencial</h3>
-						<p>
-							Somos a única Distribuidora de Açaí no Brasil a trabalhar com açaí batido com mais de 40 opções de frutas, Para escolas, cursos e faculdades temos o AÇAÍ EXPRESSO.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/social.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Social</h3>
-						<p>
-							Centenas de clientes satisfeitos sustentam suas famílias revendendo nosso produto, pessoas que por diversos motivos não poderiam bater açaí por conta própria.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="more-services-box-icon" style="background: #e8bad6">
-							<img src="Imagens/IconesGeral/musculo1.png">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<h3>Esportes</h3>
-						<p>
-							A Lokos por Açaí investe nos esportes como patrocinadora de atletas do Judô , Jiu-jitso e MMA amador.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 more-services-box wow fadeInLeft">
-				<div class="row">
+            <div class="row">
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/gmail.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Cadastre-se</h3>
+                            <p>
+                                Cadastre-se e receba todas as novidades, dicas e informações sobre o açaí.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/diferencial.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Diferencial</h3>
+                            <p>
+                                Somos a única Distribuidora de Açaí no Brasil a trabalhar com açaí batido com mais de 40 opções de frutas, Para escolas, cursos e faculdades temos o AÇAÍ EXPRESSO.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/social.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Social</h3>
+                            <p>
+                                Centenas de clientes satisfeitos sustentam suas famílias revendendo nosso produto, pessoas que por diversos motivos não poderiam bater açaí por conta própria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="more-services-box-icon" style="background: #e8bad6">
+                                <img src="Imagens/IconesGeral/musculo1.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Esportes</h3>
+                            <p>
+                                A Lokos por Açaí investe nos esportes como patrocinadora de atletas do Judô , Jiu-jitso e MMA amador.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 more-services-box wow fadeInLeft">
+                    <div class="row">
 
-				</div>
-			</div>
-		</div>
+                    </div>
+                </div>
+            </div>
 
-	</div>
-</div>
+        </div>
+    </div>
 
-	<div id="quemsomos" class="bgParallax row" data-speed="15">
+    <div id="quemsomos" class="bgParallax row" data-speed="15">
 
-	</div>
-	<div id="missao" class="bgParallax row" data-speed="10">
+    </div>
+    <div id="missao" class="bgParallax row" data-speed="10">
 
-	</div>
-	<div id="teste" class="bgParallax row" data-speed="10">
+    </div>
+    <div id="teste" class="bgParallax row" data-speed="10">
 
-	</div>
-<!-- Call to action -->
-<!-- será usado em caso de necessidade --
+    </div>
+    <!-- Call to action -->
+    <!-- será usado em caso de necessidade --
 <div id="paralax"  class="call-to-action-container section-container section-container-image-bg">
     <div class="container">
         <div class="row">
@@ -539,416 +608,429 @@
         </div>
     </div>
 </div> -->
-<!-- teste paralax-->
+    <!-- teste paralax-->
 
-<!-- teste paralax-->
+    <!-- teste paralax-->
 
-<!-- começo do EVENTOS -->
-<div class="blog-container section-container">
+    <!-- começo do EVENTOS -->
+    <div class="blog-container section-container">
 
-	<div class="container">
+        <div class="container">
 
-		<div class="row">
-			<div class="col-sm-12 col-xs-12 section-description wow fadeIn" id="blog">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 section-description wow fadeIn" id="blog">
 
-				<h2><img src="Imagens/IconesGeral/musculo1.png">Eventos<img src="Imagens/IconesGeral/musculo2.png"></h2>
+                    <h2><img src="Imagens/IconesGeral/musculo1.png">Eventos<img src="Imagens/IconesGeral/musculo2.png"></h2>
 
-				<div class="divider-1 wow fadeInUp"><span></span></div>
-			</div>
-		</div>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+            </div>
 
-		<div class="row col-xs-12">
+            <div class="row col-xs-12">
 
-			<h3>Confira algumas das fotos do evento da BODY BUILDING 2014, com o apoio da Lokos por Açaí:</h3>
+                <h3>Confira algumas das fotos do evento da BODY BUILDING 2014, com o apoio da Lokos por Açaí:</h3>
 
-			<div class="blog-box-date">
-				<i class="fa fa-calendar-o"></i> 2014
-			</div>
+                <div class="blog-box-date">
+                    <i class="fa fa-calendar-o"></i> 2014
+                </div>
 
-		</div>
+            </div>
 
-		<div class="row ">
+            <div class="row ">
 
-			<!-- Começo do carousel de 4 para EVENTOS ---------------------------------------- -->
+                <!-- Começo do carousel de 4 para EVENTOS ---------------------------------------- -->
 
-			<div id="carousel-example-generic3" class="carousel tamanhocarousel slide col-xs-10 col-md-10 col-md-offset-1 col-xs-offset-1" data-ride="carousel" >
-				<!-- Indicators -->
-				<ol class="carousel-indicators corborda">
-					<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic3" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic3" data-slide-to="2"></li>
-				</ol>
+                <div id="carousel-example-generic3" class="carousel tamanhocarousel slide col-xs-10 col-md-10 col-md-offset-1 col-xs-offset-1" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators corborda">
+                        <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                    </ol>
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner " role="listbox">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner " role="listbox">
 
-					<div class="item active ">
-						<div class="row" >
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 01.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 01.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 02.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 02.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 03.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 03.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 04.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 04.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-						</div><!--.row-->
-						<div class="row">
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 09.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 09.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 10.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 10.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 11.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 11.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 12.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 12.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-						</div>
-					</div><!--.item-->
+                        <div class="item active ">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6" style="">
 
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 05.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 05.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 06.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 06.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 07.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 07.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 08.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 08.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-						</div><!--.row-->
-					</div><!--.item-->
+                                    <a href="Imagens/evento/BODY BUILDING 2014 01.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 01.jpg" alt="Image" style="max-width:100%;"></a>
 
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-xs-6" style="">
-								
-									<a href="Imagens/evento/BODY BUILDING 2014 17.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 17.jpg" alt="Image" style="max-width:100%;"></a>
-								
-							</div>
-							<div>
-								<div class="col-md-3 col-xs-6" style="">
-									
-										<a href="Imagens/evento/BODY BUILDING 2014 13.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 13.jpg" alt="Image" style="max-width:100%;"></a>
-									
-								</div>
-								<div class="col-md-3 col-xs-6" style="">
-									
-										<a href="Imagens/evento/BODY BUILDING 2014 14.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 14.jpg" alt="Image" style="max-width:100%;"></a>
-									
-								</div>
-							</div>
-							<div>
-								<div class="col-md-3 col-xs-6" style="">
-									
-										<a href="Imagens/evento/BODY BUILDING 2014 15.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 15.jpg" alt="Image" style="max-width:100%;"></a>
-									
-								</div>
-								<div class="col-md-3 col-xs-6" style="">
-									
-										<a href="Imagens/evento/BODY BUILDING 2014 16.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 16.jpg" alt="Image" style="max-width:100%;"></a>
-									
-								</div>
-							</div>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-						</div><!--.row-->
-					</div><!--.item-->
+                                    <a href="Imagens/evento/BODY BUILDING 2014 02.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 02.jpg" alt="Image" style="max-width:100%;"></a>
 
-				</div>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 03.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 03.jpg" alt="Image" style="max-width:100%;"></a>
 
-			<!-- fim do carolsel de 4-->
-			<br>
-			<br>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-		</div>
-	</div>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 04.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 04.jpg" alt="Image" style="max-width:100%;"></a>
 
-</div>
+                                </div>
+                            </div>
+                            <!--.row-->
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6" style="">
 
-<div style="padding-bottom: 5%;" class="container-fluid testimonials-container" >
-	<div class="row">
-		<div class="col-sm-12 testimonials section-description wow fadeIn">
-			<h2>Localização <img src="Imagens/Localizacao/localizacao.png" style="max-height: 60px;"></h2>
-			<div class="divider-1 wow fadeInUp"><span></span></div>
-		</div>
-	</div>
-	<iframe class="locality col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29414.555043659748!2d-43.33939800000001!3d-22.846171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996345f40fa9b1%3A0x43acc8bf2a1cc5e4!2sEstr.+do+Barro+Vermelho%2C+1381+-+Col%C3%A9gio%2C+Rio+de+Janeiro+-+RJ%2C+21540-501!5e0!3m2!1spt-BR!2sbr!4v1500689639801" width="1300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 09.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 09.jpg" alt="Image" style="max-width:100%;"></a>
 
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-<div class="container-fluid " id="news" name="news">
-	<div class="col-xs-12 section-description wow fadeIn">
+                                    <a href="Imagens/evento/BODY BUILDING 2014 10.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 10.jpg" alt="Image" style="max-width:100%;"></a>
 
-		<div class="page-header">
-			<h2>Noticias Sobre Açaí</h2>
-		</div>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-		<div class="carousel slide" id="myCarousel">
-			<div class="carousel-inner">
-				<div class="item active">
-					<ul class="thumbnails">
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_embrapa.html"><img src="assets/img/embrapa.jpg" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>Estudo da Embrapa mostra composição química do açaí</h4>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 11.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 11.jpg" alt="Image" style="max-width:100%;"></a>
 
-									<a class="btn btn-mini" href="news_embrapa.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_sebrae.html"><img src="assets/img/sebrai.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>Como o Sebrae pode ajudar seu Projeto de Açaí e Sorvetes Gratuitamente</h4>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-									<a class="btn btn-mini" href="news_sebrae.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_creme.html"><img src="assets/img/creme.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>Vantagens de se comprar o Creme de Açaí para comercialização</h4>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 12.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 12.jpg" alt="Image" style="max-width:100%;"></a>
 
-									<a class="btn btn-mini" href="news_creme.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_pirata.html"><img src="assets/img/acai_falso.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>O que é Açaí Pirata e como se proteger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.item-->
 
-									<a class="btn btn-mini" href="news_pirata.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div><!-- /Slide1 -->
-				<div class="item">
-					<ul class="thumbnails">
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_carrinho.html"><img src="assets/img/carrinho.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>Carrinho de açaí é um pequeno mas lucrativo negócio</h4>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6" style="">
 
-									<a class="btn btn-mini" href="news_carrinho.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_motivos.html"><img src="assets/img/acai_saude.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>8 Motivos para você consumir Açaí ainda Hoje</h4>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 05.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 05.jpg" alt="Image" style="max-width:100%;"></a>
 
-									<a class="btn btn-mini" href="news_motivos.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
-						<li class="col-sm-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="news_maquina.html"><img src="assets/img/maquina.png" alt=""></a>
-								</div>
-								<div class="caption">
-									<h4>O Funcionamento de uma maquina de açaí expresso frozen</h4>
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-									<a class="btn btn-mini" href="news_maquina.html">» Leia mais...</a>
-								</div>
-							</div>
-						</li>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 06.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 06.jpg" alt="Image" style="max-width:100%;"></a>
 
-					</ul>
-				</div><!-- /Slide2 -->
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
 
-			</div><!-- /Slide3 -->
-		</div>
+                                    <a href="Imagens/evento/BODY BUILDING 2014 07.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 07.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                </div>
+                                <div class="col-md-3 col-xs-6" style="">
+
+                                    <a href="Imagens/evento/BODY BUILDING 2014 08.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 08.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6" style="">
+
+                                    <a href="Imagens/evento/BODY BUILDING 2014 17.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 17.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                </div>
+                                <div>
+                                    <div class="col-md-3 col-xs-6" style="">
+
+                                        <a href="Imagens/evento/BODY BUILDING 2014 13.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 13.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6" style="">
+
+                                        <a href="Imagens/evento/BODY BUILDING 2014 14.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 14.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-3 col-xs-6" style="">
+
+                                        <a href="Imagens/evento/BODY BUILDING 2014 15.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 15.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                    </div>
+                                    <div class="col-md-3 col-xs-6" style="">
+
+                                        <a href="Imagens/evento/BODY BUILDING 2014 16.jpg" class="thumbnail" data-lightbox="roadtrip"><img src="Imagens/evento/BODY BUILDING 2014 16.jpg" alt="Image" style="max-width:100%;"></a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- fim do carolsel de 4-->
+                <br>
+                <br>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div style="padding-bottom: 5%;" class="container-fluid testimonials-container">
+        <div class="row">
+            <div class="col-sm-12 testimonials section-description wow fadeIn">
+                <h2>Localização <img src="Imagens/Localizacao/localizacao.png" style="max-height: 60px;"></h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+        </div>
+        <iframe class="locality col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29414.555043659748!2d-43.33939800000001!3d-22.846171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996345f40fa9b1%3A0x43acc8bf2a1cc5e4!2sEstr.+do+Barro+Vermelho%2C+1381+-+Col%C3%A9gio%2C+Rio+de+Janeiro+-+RJ%2C+21540-501!5e0!3m2!1spt-BR!2sbr!4v1500689639801" width="1300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 
 
-		<nav>
-			<ul class="control-box pager">
-				<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
-				<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-			</ul>
-		</nav>
-		<!-- /.control-box -->
+    <div class="container-fluid " id="news" name="news">
+        <div class="col-xs-12 section-description wow fadeIn">
 
-	</div><!-- /#myCarousel -->
+            <div class="page-header">
+                <h2>Noticias Sobre Açaí</h2>
+            </div>
 
-</div><!-- /.col-xs-12 -->
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_embrapa.html"><img src="assets/img/embrapa.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>Estudo da Embrapa mostra composição química do açaí</h4>
 
-<!-- Footer -->
-<footer class="footer-container" style="background-color: #3f2161">
-	<div class="container">
-		<div class="row">
+                                        <a class="btn btn-mini" href="news_embrapa.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_sebrae.html"><img src="assets/img/sebrai.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>Como o Sebrae pode ajudar seu Projeto de Açaí e Sorvetes Gratuitamente</h4>
 
-			<div class="col-sm-6 footer-left">
-				<h3>Fale Conosco</h3>
-				<div class="contact-form">
-					<form role="form" action="assets/contact.php" method="post">
-						<div class="form-group">
-							<label class="sr-only" for="contact-email">Email</label>
-							<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="contact-subject">Assunto..</label>
-							<input type="text" name="subject" placeholder="Assunto..." class="contact-subject form-control" id="contact-subject">
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="contact-message">Mensagem..</label>
-							<textarea name="message" placeholder="Mensagem..." class="contact-message form-control" id="contact-message"></textarea>
-						</div>
-						<button  type="submit" class="btn"  >Enviar Mensagem</button>
-					</form>
-				</div>
-			</div>
+                                        <a class="btn btn-mini" href="news_sebrae.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_creme.html"><img src="assets/img/creme.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>Vantagens de se comprar o Creme de Açaí para comercialização</h4>
 
-			<div class="col-sm-5 col-sm-offset-1 footer-right">
-				<h3>Siga-nos nas redes sociais</h3>
-				<div class="footer-social">
-					<a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="btn btn-mini" href="news_creme.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_pirata.html"><img src="assets/img/acai_falso.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>O que é Açaí Pirata e como se proteger</h4>
 
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a class="btn btn-mini" href="news_pirata.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Slide1 -->
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_carrinho.html"><img src="assets/img/carrinho.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>Carrinho de açaí é um pequeno mas lucrativo negócio</h4>
 
-				</div>
-				<div class="footer-copyright">
-					&copy; Desenvolvido por: Byous Inc. <br>
-				</div>
-			</div>
-			<div class="col-sm-5 col-sm-offset-1 footer-right" style="padding-top: 05%; ">
-				<div class="row">
-					<div class="col-sm-9">
-						<h3 style="color: white;font-family: Arial, Helvetica, sans-serif;">
-							<img src="Imagens/IconesGeral/telefone2.png" width="20%" height="20%" style="padding-right: 10%">(21) 3371-9214</h3>
-					</div>
-				</div>
-			</div>
+                                        <a class="btn btn-mini" href="news_carrinho.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_motivos.html"><img src="assets/img/acai_saude.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>8 Motivos para você consumir Açaí ainda Hoje</h4>
 
-		</div>
-	</div>
+                                        <a class="btn btn-mini" href="news_motivos.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="fff">
+                                    <div class="thumbnail">
+                                        <a href="news_maquina.html"><img src="assets/img/maquina.png" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h4>O Funcionamento de uma maquina de açaí expresso frozen</h4>
 
-	<div class="container-fluid" >
-		<div class="row">
-			<div class="col-sm-12 footer-bottom" style="background-color: #3f2161">
-				<a class="scroll-link" href="#top-content"><i class="fa fa-chevron-up"></i></a>
-			</div>
-		</div>
-	</div>
-</footer>
+                                        <a class="btn btn-mini" href="news_maquina.html">» Leia mais...</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- /Slide2 -->
+
+                </div>
+                <!-- /Slide3 -->
+            </div>
+
+
+            <nav>
+                <ul class="control-box pager">
+                    <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+                    <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+            <!-- /.control-box -->
+
+        </div>
+        <!-- /#myCarousel -->
+
+    </div>
+    <!-- /.col-xs-12 -->
+
+    <!-- Footer -->
+    <footer class="footer-container" style="background-color: #3f2161">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 footer-left">
+                    <h3>Fale Conosco</h3>
+                    <div class="contact-form">
+                        <form role="form" action="assets/contact.php" method="post">
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-email">Email</label>
+                                <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-subject">Assunto..</label>
+                                <input type="text" name="subject" placeholder="Assunto..." class="contact-subject form-control" id="contact-subject">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-message">Mensagem..</label>
+                                <textarea name="message" placeholder="Mensagem..." class="contact-message form-control" id="contact-message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-sm-offset-1 footer-right">
+                    <h3>Siga-nos nas redes sociais</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+
+                    </div>
+                    <div class="footer-copyright">
+                        &copy; Desenvolvido por: Byous Inc. <br>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 footer-right" style="padding-top: 05%; ">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h3 style="color: white;font-family: Arial, Helvetica, sans-serif;">
+                                <img src="Imagens/IconesGeral/telefone2.png" width="20%" height="20%" style="padding-right: 10%">(21) 3371-9214</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 footer-bottom" style="background-color: #3f2161">
+                    <a class="scroll-link" href="#top-content"><i class="fa fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
-<!-- Javascript -->
-<!-- <script src="scripts/animacao.js" type="text/javascript"></script> -->
-<script src="assets/js/jquery-1.11.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.backstretch.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/retina-1.1.0.min.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+    <!-- Javascript -->
+    <!-- <script src="scripts/animacao.js" type="text/javascript"></script> -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
-<script type="text/javascript">
-	$(function() {
-		$('a[href="#news"]').click(
-			function(e){
-				e.preventDefault();
-				var targetOffset = $('div[id="news"]').offset().top;
-				$('body').animate(
-					{scrollTop: targetOffset}, 1000);
+    <script type="text/javascript">
+        $(function() {
+            $('a[href="#news"]').click(
+                function(e) {
+                    e.preventDefault();
+                    var targetOffset = $('div[id="news"]').offset().top;
+                    $('body').animate({
+                        scrollTop: targetOffset
+                    }, 1000);
 
-			});
-	})
-</script>
+                });
+        })
 
-<script type="text/javascript">
-    $('div.bgParallax').each(function(){
-        var $obj = $(this);
+    </script>
 
-        $(window).scroll(function() {
-            var yPos = -($(window).scrollTop() / $obj.data('speed'));
+    <script type="text/javascript">
+        $('div.bgParallax').each(function() {
+            var $obj = $(this);
 
-            var bgpos = '50% '+ yPos + 'px';
+            $(window).scroll(function() {
+                var yPos = -($(window).scrollTop() / $obj.data('speed'));
 
-            $obj.css('background-position', bgpos );
+                var bgpos = '50% ' + yPos + 'px';
 
+                $obj.css('background-position', bgpos);
+
+            });
         });
-    });
-</script>
+
+    </script>
 
 
-<!--[if lt IE 10]>
+    <!--[if lt IE 10]>
 <script src="assets/js/placeholder.js"></script>
 <![endif]-->
 
 </body>
 
 </html>
-
